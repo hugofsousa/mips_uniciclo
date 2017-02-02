@@ -9,7 +9,7 @@ ENTITY pc is
 		clk : in std_logic;
 		address_in : in std_logic_vector ((WSIZE - 1) downto 0);
 
-		address_out : out std_logic_vesctor (7 downto 0)
+		address_out : out std_logic_vector (7 downto 0)
 	);
 END ENTITY;
 

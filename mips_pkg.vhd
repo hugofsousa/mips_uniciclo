@@ -72,6 +72,14 @@ package	mips_pkg	is
 		);
 	end component;
 	
+	component multiplexador_5_bits is
+		port(
+			selector : in std_logic;
+			opt0, opt1 : in std_logic_vector (4 downto 0);
+			result : out std_logic_vector (4 downto 0)
+		);
+	end component;
+	
 	-- Controle	ULAmips
 	constant	ULA_AND :	std_logic_vector(3	downto	0)	:=	"0000";	-- 0
 	constant	ULA_OR :	std_logic_vector(3	downto	0)	:=	"0001";	-- 1

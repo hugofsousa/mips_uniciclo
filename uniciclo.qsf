@@ -68,3 +68,5 @@ set_global_assignment -name VHDL_FILE breg.vhd
 set_global_assignment -name VHDL_FILE breg_ula.vhd
 set_global_assignment -name VHDL_FILE c_ula.vhd
 set_global_assignment -name VHDL_FILE ula.vhd
+set_global_assignment -name VHDL_FILE pc.vhd
+set_global_assignment -name VHDL_FILE multiplexador_5_bits.vhd
