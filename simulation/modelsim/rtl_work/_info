@@ -1,0 +1,138 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\TEMP.W311918.000\Desktop\Uniciclo\simulation\modelsim
+Pmips_pkg
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+w1486036797
+Z4 dC:\Users\TEMP.W311918.000\Desktop\Uniciclo\simulation\modelsim
+8C:/Users/TEMP.W311918.000/Desktop/Uniciclo/mips_pkg.vhd
+FC:/Users/TEMP.W311918.000/Desktop/Uniciclo/mips_pkg.vhd
+l0
+L5
+Vf>MOhmbDKJ^eOnl4?870l3
+Z5 OV;C;10.1d;51
+31
+Z6 o-93 -work work -O0
+Z7 tExplicit 1
+!s100 zf_nn85=a?DNf2TS>cM200
+!i10b 1
+!s108 1486038409.409000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/Uniciclo/mips_pkg.vhd|
+!s107 C:/Users/TEMP.W311918.000/Desktop/Uniciclo/mips_pkg.vhd|
+Esomador
+Z8 w1486037228
+Z9 DPx4 work 8 mips_pkg 0 22 f>MOhmbDKJ^eOnl4?870l3
+R1
+R2
+R3
+R4
+Z10 8C:/Users/TEMP.W311918.000/Desktop/Uniciclo/somador.vhd
+Z11 FC:/Users/TEMP.W311918.000/Desktop/Uniciclo/somador.vhd
+l0
+L6
+V:AUV[2Ch4CgYGaPmEVk^R2
+R5
+31
+Z12 !s108 1486038409.959000
+Z13 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/Uniciclo/somador.vhd|
+Z14 !s107 C:/Users/TEMP.W311918.000/Desktop/Uniciclo/somador.vhd|
+R6
+R7
+!s100 `RdC^cJGTJGNN09TMnBdi0
+!i10b 1
+Artl
+R9
+R1
+R2
+R3
+DEx4 work 7 somador 0 22 :AUV[2Ch4CgYGaPmEVk^R2
+l18
+L16
+V4AYCbVCgh8A[D@4dMbHIT0
+R5
+31
+R12
+R13
+R14
+R6
+R7
+!s100 <?93cf3VJ=4I35>;M>N2c2
+!i10b 1
+Euniciclo
+Z15 w1486037230
+R9
+R1
+R2
+R3
+R4
+Z16 8C:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo.vhd
+Z17 FC:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo.vhd
+l0
+L6
+VC0XY]PJ>CZ41mK>ChK_ci2
+R5
+31
+Z18 !s108 1486038409.640000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo.vhd|
+Z20 !s107 C:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo.vhd|
+R6
+R7
+!s100 ^KjhV]T3]mDMiEVf7A<3X0
+!i10b 1
+Artl
+R9
+R1
+R2
+R3
+DEx4 work 8 uniciclo 0 22 C0XY]PJ>CZ41mK>ChK_ci2
+l15
+L13
+VE3MB7nULP_QC]F=<[B?1P2
+R5
+31
+R18
+R19
+R20
+R6
+R7
+!s100 fGYIbZbH<WXS=SBmY0FVU1
+!i10b 1
+Euniciclo_tb
+Z21 w1486038327
+R2
+R3
+R4
+Z22 8C:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo_tb.vhd
+Z23 FC:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo_tb.vhd
+l0
+L4
+VPei0aoW?CaM8cX0]idAEg1
+!s100 I?oY513iJo2W9Uaj8@efn1
+R5
+31
+!i10b 1
+Z24 !s108 1486038410.259000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo_tb.vhd|
+Z26 !s107 C:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo_tb.vhd|
+R6
+R7
+Auniciclo_arch
+R2
+R3
+DEx4 work 11 uniciclo_tb 0 22 Pei0aoW?CaM8cX0]idAEg1
+l15
+L6
+VWFz?k_ZF>>Kz@3bA6NOO?1
+!s100 m4OgKDanDYOcj0ch4d9jc0
+R5
+31
+!i10b 1
+R24
+R25
+R26
+R6
+R7
