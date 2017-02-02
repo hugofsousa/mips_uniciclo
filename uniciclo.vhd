@@ -11,8 +11,8 @@ entity uniciclo is
 end entity;
 
 architecture rtl of uniciclo is
-	SIGNAL four, address_in_pc : std_logic_vector(31 downto 0);
-	SIGNAL address_mem_ins : std_logic_vector(7 downto 0);
+	SIGNAL four, address_in_pc, mem_ins_out : std_logic_vector(31 downto 0);
+	SIGNAL address_mem_ins_in : std_logic_vector(7 downto 0);
 	four := "00000000000000000000000000000100";
 begin
 	s1: somador port map (
@@ -23,15 +23,15 @@ begin
 	);
 	
 	mem_ins: memory_instruction port map(
-		address => address_mem_ins,
+		address => address_mem_ins_in,
 		clock => clk,
-		q => 
+		q => mem_ins_out
 	);
 	
 	pc : pc port map(
 		clock => clk,
 		address_in => address_in_pc,
-		address_out => address_mem_ins
+		address_out => address_mem_ins_in
 	);
 
 	process(clk)
