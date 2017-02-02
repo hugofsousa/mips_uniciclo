@@ -22,17 +22,31 @@ begin
 		result => display
 	);
 	
-	mem_ins: memory_instruction port map(
-		address => address_mem_ins_in,
-		clock => clk,
-		q => mem_ins_out
-	);
+	--mem_ins: memory_instruction port map(
+	--	address => address_mem_ins_in,
+	--	clock => clk,
+	--	q => mem_ins_out
+	--);
 	
 	pc : pc port map(
 		clock => clk,
 		address_in => address_in_pc,
 		address_out => address_mem_ins_in
 	);
+	
+	--bregula: breg_ula port map(
+	--	rs => ,
+	--	rt => ,
+	--	rd => ,
+	--	we => ,
+	--	clk => clk,
+	--	din => ,
+	--	func => ,
+	--	opula => ,
+		
+	--	dout => ,
+	--	zero => 
+	--);
 
 	process(clk)
 	begin

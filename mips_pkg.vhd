@@ -4,6 +4,19 @@ use	ieee.numeric_std.all;
 
 package	mips_pkg	is
 	-- Declaracao	de	componentes
+	component breg_ula is
+		generic	(	WSIZE	:	natural	:=	32);
+		port(
+			rs,rt, rd : in std_logic_vector(4 downto 0);
+			we, clk : in std_logic;
+			din : in std_logic_vector(31 downto 0);
+			func : in std_logic_vector(5 downto 0);
+			opula : in std_logic_vector(1 downto 0);
+			dout  : out std_logic_vector(31 downto 0);
+			zero : out std_logic
+		);
+	end component;
+	
 	component	ula	is
 		generic	(	WSIZE	:	natural	:=	32);
 		port	(	
