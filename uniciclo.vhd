@@ -6,6 +6,7 @@ use work.mips_pkg.all;
 entity uniciclo is
 	port(
 		clk : in std_logic;
+		clk_mem : in std_logic;								-- clock da memoria
 		display : out std_logic_vector(31 downto 0)
 	);
 end entity;
@@ -34,11 +35,11 @@ begin
 		result => display
 	);
 	
-	--mem_ins: memory_instruction port map(
-	--	address => address_mem_ins_in,
-	--	clock => clk,
-	--	q => mem_ins_out
-	--);
+	mi : memory_instruction port map(
+    address		 => address_in_pc(9 downto 2),		--address recebe o pc
+	 q           => display, 
+	 clock       => clk_mem
+	);
 	
 	pc : pc port map(
 		clock => clk,

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for uniciclo
-Thu Feb 02 10:25:32 2017
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Feb 03 23:56:19 2017
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -10,15 +10,7 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: somador:s1
- 11. Port Connectivity Checks: "somador:s1"
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -41,24 +33,24 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 02 10:25:32 2017           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; uniciclo                                        ;
-; Top-level Entity Name              ; uniciclo                                        ;
-; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 33                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Fri Feb 03 23:56:19 2017          ;
+; Quartus II 32-bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; uniciclo                                   ;
+; Top-level Entity Name              ; uniciclo                                   ;
+; Family                             ; Cyclone II                                 ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -152,113 +144,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                   ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                            ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------+---------+
-; uniciclo.vhd                     ; yes             ; User VHDL File  ; C:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo.vhd ;         ;
-; somador.vhd                      ; yes             ; User VHDL File  ; C:/Users/TEMP.W311918.000/Desktop/Uniciclo/somador.vhd  ;         ;
-; mips_pkg.vhd                     ; yes             ; User VHDL File  ; C:/Users/TEMP.W311918.000/Desktop/Uniciclo/mips_pkg.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 33    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-+---------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |uniciclo                  ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |uniciclo           ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; somador:s1|result[0,1]                 ; Stuck at GND due to stuck port data_in ;
-; somador:s1|result[2]                   ; Stuck at VCC due to stuck port data_in ;
-; somador:s1|result[3..31]               ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 32 ;                                        ;
-+----------------------------------------+----------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: somador:s1 ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; wsize          ; 32    ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------+
-; Port Connectivity Checks: "somador:s1"     ;
-+----------+-------+----------+--------------+
-; Port     ; Type  ; Severity ; Details      ;
-+----------+-------+----------+--------------+
-; a[31..1] ; Input ; Info     ; Stuck at GND ;
-; a[0]     ; Input ; Info     ; Stuck at VCC ;
-; b[1..0]  ; Input ; Info     ; Stuck at VCC ;
-; b[31..2] ; Input ; Info     ; Stuck at GND ;
-+----------+-------+----------+--------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -266,8 +154,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Feb 02 10:25:29 2017
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Fri Feb 03 23:56:16 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uniciclo -c uniciclo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file uniciclo.vhd
@@ -276,57 +164,35 @@ Info (12021): Found 2 design units, including 1 entities, in source file unicicl
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
     Info (12022): Found design unit 1: somador-rtl
     Info (12023): Found entity 1: somador
-Info (12021): Found 1 design units, including 0 entities, in source file mips_pkg.vhd
-    Info (12022): Found design unit 1: mips_pkg
 Info (12021): Found 2 design units, including 1 entities, in source file uniciclo_tb.vhd
     Info (12022): Found design unit 1: uniciclo_tb-uniciclo_arch
     Info (12023): Found entity 1: uniciclo_tb
-Info (12127): Elaborating entity "uniciclo" for the top level hierarchy
-Info (12128): Elaborating entity "somador" for hierarchy "somador:s1"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display[0]" is stuck at GND
-    Warning (13410): Pin "display[1]" is stuck at GND
-    Warning (13410): Pin "display[2]" is stuck at VCC
-    Warning (13410): Pin "display[3]" is stuck at GND
-    Warning (13410): Pin "display[4]" is stuck at GND
-    Warning (13410): Pin "display[5]" is stuck at GND
-    Warning (13410): Pin "display[6]" is stuck at GND
-    Warning (13410): Pin "display[7]" is stuck at GND
-    Warning (13410): Pin "display[8]" is stuck at GND
-    Warning (13410): Pin "display[9]" is stuck at GND
-    Warning (13410): Pin "display[10]" is stuck at GND
-    Warning (13410): Pin "display[11]" is stuck at GND
-    Warning (13410): Pin "display[12]" is stuck at GND
-    Warning (13410): Pin "display[13]" is stuck at GND
-    Warning (13410): Pin "display[14]" is stuck at GND
-    Warning (13410): Pin "display[15]" is stuck at GND
-    Warning (13410): Pin "display[16]" is stuck at GND
-    Warning (13410): Pin "display[17]" is stuck at GND
-    Warning (13410): Pin "display[18]" is stuck at GND
-    Warning (13410): Pin "display[19]" is stuck at GND
-    Warning (13410): Pin "display[20]" is stuck at GND
-    Warning (13410): Pin "display[21]" is stuck at GND
-    Warning (13410): Pin "display[22]" is stuck at GND
-    Warning (13410): Pin "display[23]" is stuck at GND
-    Warning (13410): Pin "display[24]" is stuck at GND
-    Warning (13410): Pin "display[25]" is stuck at GND
-    Warning (13410): Pin "display[26]" is stuck at GND
-    Warning (13410): Pin "display[27]" is stuck at GND
-    Warning (13410): Pin "display[28]" is stuck at GND
-    Warning (13410): Pin "display[29]" is stuck at GND
-    Warning (13410): Pin "display[30]" is stuck at GND
-    Warning (13410): Pin "display[31]" is stuck at GND
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk"
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 32 output pins
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 36 warnings
-    Info: Peak virtual memory: 374 megabytes
-    Info: Processing ended: Thu Feb 02 10:25:32 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+Info (12021): Found 1 design units, including 0 entities, in source file mips_pkg.vhd
+    Info (12022): Found design unit 1: mips_pkg
+Info (12021): Found 2 design units, including 1 entities, in source file breg.vhd
+    Info (12022): Found design unit 1: breg-rtl
+    Info (12023): Found entity 1: breg
+Info (12021): Found 2 design units, including 1 entities, in source file breg_ula.vhd
+    Info (12022): Found design unit 1: breg_ula-rtl
+    Info (12023): Found entity 1: breg_ula
+Info (12021): Found 2 design units, including 1 entities, in source file c_ula.vhd
+    Info (12022): Found design unit 1: c_ula-rtl
+    Info (12023): Found entity 1: c_ula
+Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
+    Info (12022): Found design unit 1: ula-behavioral
+    Info (12023): Found entity 1: ula
+Error (10500): VHDL syntax error at pc.vhd(17) near text "address_in";  expecting "begin", or a declaration statement File: C:/Users/Cristiane/Desktop/mips_uniciclo/pc.vhd Line: 17
+Info (12021): Found 0 design units, including 0 entities, in source file pc.vhd
+Error (10500): VHDL syntax error at multiplexador_5_bits.vhd(20) near text "when";  expecting "is" File: C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_5_bits.vhd Line: 20
+Error (10500): VHDL syntax error at multiplexador_5_bits.vhd(21) near text "others";  expecting "end", or "(", or an identifier ("others" is a reserved keyword), or a sequential statement File: C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_5_bits.vhd Line: 21
+Info (12021): Found 0 design units, including 0 entities, in source file multiplexador_5_bits.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file memory_instruction.vhd
+    Info (12022): Found design unit 1: memory_instruction-SYN
+    Info (12023): Found entity 1: memory_instruction
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
+    Error: Peak virtual memory: 386 megabytes
+    Error: Processing ended: Fri Feb 03 23:56:19 2017
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:03
 
 

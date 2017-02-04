@@ -79,6 +79,15 @@ package	mips_pkg	is
 			result : out std_logic_vector (4 downto 0)
 		);
 	end component;
+
+	component memory_instruction is
+		port(
+			address	: in std_logic_vector(7 downto 0);
+			clock		: in std_logic;
+			q		   : out std_logic_vector(31 downto 0)
+		);
+
+	end component;
 	
 	-- Controle	ULAmips
 	constant	ULA_AND :	std_logic_vector(3	downto	0)	:=	"0000";	-- 0
