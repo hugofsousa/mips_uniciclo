@@ -89,6 +89,16 @@ package	mips_pkg	is
 
 	end component;
 	
+	component data_memory is
+		port(
+			address	: in std_logic_vector(7 downto 0);
+			clock		: in std_logic;
+			data		: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+			wren		: IN STD_LOGIC ;
+			q		   : out std_logic_vector(31 downto 0)
+		);
+	end component;
+	
 	-- Controle	ULAmips
 	constant	ULA_AND :	std_logic_vector(3	downto	0)	:=	"0000";	-- 0
 	constant	ULA_OR :	std_logic_vector(3	downto	0)	:=	"0001";	-- 1

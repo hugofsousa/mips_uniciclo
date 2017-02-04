@@ -37,8 +37,16 @@ begin
 	
 	mi : memory_instruction port map(
     address		 => address_in_pc(9 downto 2),		--address recebe o pc
-	 q           => display, 
+	 q           => display,                        --trocar pelo local que vai receber q
 	 clock       => clk_mem
+	);
+	
+	md : data_memory port map(
+	 address    => ??,
+	 q          => display,           					--trocar pelo local que vai receber q
+	 clock      => clk_mem,
+	 data       => ??,
+	 wren       => ??
 	);
 	
 	pc : pc port map(
