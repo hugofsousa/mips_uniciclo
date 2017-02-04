@@ -12,41 +12,50 @@ entity uniciclo is
 end entity;
 
 architecture rtl of uniciclo is
-	SIGNAL four, address_in_pc, mem_ins_out : std_logic_vector(31 downto 0);
-	SIGNAL address_mem_ins_in : std_logic_vector(7 downto 0);
+	SIGNAL result_s1, result_s2, result_mux_branch, four, address_in_pc, mem_ins_out, func_32, func_32_shift : std_logic_vector(31 downto 0);
+	SIGNAL address_mem_ins_in, addres_mem_data_in : std_logic_vector(7 downto 0);
 	SIGNAL opcode, write_register : std_logic_vector(5 downto 0);
+	SIGNAL func_16 : std_logic_vector(15 downto 0);
 	
 	-- bregula signals
 	SIGNAL rs, rt, rd : std_logic_vector(4 downto 0);
-   SIGNAL clk : std_logic;
+	SIGNAL clk : std_logic;
 	SIGNAL din : std_logic_vector(31 downto 0);
-	SIGNAL func : std_logic_vector(5 downto 0);
+	SIGNAL func_6 : std_logic_vector(5 downto 0);
 	SIGNAL opula : std_logic_vector(1 downto 0);
 	SIGNAL dout  : std_logic_vector(31 downto 0);
 	SIGNAL zero : std_logic;
 	
 	-- control signals
-	SIGNAL RegDst, RegWrite : std_logic;
+	SIGNAL RegDst, ALUSrc, RegWrite, Jump, Branch, MemRead, MemtoReg, MemWrite : std_logic;
+	SIGNAL ALUOp : std_logic_vector(1 downto 0);
 begin
 	s1: somador port map (
 		clk => clk,
 		A => address_mem_ins,
 		B => four,
-		result => display
+		result => result_s1
+	);
+
+	s2: somador port map (
+		clk => clk,
+		A => result_s1,
+		B => func_32_shift,
+		result => result_s2
 	);
 	
 	mi : memory_instruction port map(
-    address		 => address_in_pc(9 downto 2),		--address recebe o pc
-	 q           => display,                        --trocar pelo local que vai receber q
-	 clock       => clk_mem
+    	address		 => address_mem_ins_in, 
+		q           => mem_ins_out, 
+		clock       => clk_mem
 	);
 	
 	md : data_memory port map(
-	 address    => ??,
-	 q          => display,           					--trocar pelo local que vai receber q
-	 clock      => clk_mem,
-	 data       => ??,
-	 wren       => ??
+		address    => addres_mem_data_in,
+	   q          => din,                       --se o mux der 1  write data register
+	   clock      => clk_mem,
+	   data       => ??,                        --regB
+	   wren       => memWrite
 	);
 	
 	pc : pc port map(
@@ -62,8 +71,8 @@ begin
 		we => RegWrite,
 		clk => clk,
 		din => din,
-		func => func,
-		opula => opula,
+		func => func_6,
+		opula => ALUOp,
 		dout => dout,
 		zero => zero
 	);
@@ -75,6 +84,32 @@ begin
 		result => write_register
 	);
 
+	mux_branch : multiplexador_32_bits port map(
+		opt0 => result_s1,
+		opt1 => result_s2,
+		selector => branch_and_zero_ula,
+		result => result_mux_branch
+	);
+
+	mux_jump : multiplexador_32_bits port map(
+		opt0 => result_mux_branch,
+		opt1 => ,
+		selector => RegDst,
+		result => address_in_pc
+	);
+
+	ctrl : control port map (
+		opcode => opcode,
+		RegDst => RegDst,
+		Jump => Jump,
+		Branch => Branch,
+		MemRead => MemRead,
+		MemtoReg => MemtoReg,
+		MemWrite => MemWrite,
+		ALUOp => ALUOp,
+		ALUSrc => ALUSrc
+	);
+
 	process(clk)
 	begin
 		four <= "00000000000000000000000000000100";
@@ -82,7 +117,11 @@ begin
 		rs <= mem_ins_out(25 downto 21);
 		rt <= mem_ins_out(20 downto 16);
 		rd <= mem_ins_out(15 downto 11);
-		func <= mem_ins_out(15 downto 0);
+		func_16 <= mem_ins_out(15 downto 0);
+		--func_32 <= func_16  -- Sign-extend
+		func_32_shift <= std_logic_vector(shift_left(signed(func_32), 2))
+		func_6 <= func(5 downto 0);
+		branch_and_zero_ula <= Branch and zero;
 	end process;
 end architecture;
 
