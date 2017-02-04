@@ -14,6 +14,7 @@ end entity;
 architecture rtl of uniciclo is
 	SIGNAL result_s1, result_s2, result_mux_branch, four, address_in_pc, mem_ins_out, func_32, func_32_shift : std_logic_vector(31 downto 0);
 	SIGNAL address_mem_ins_in, addres_mem_data_in : std_logic_vector(7 downto 0);
+	SIGNAL readData1, readData2 : std_logic_vector(31 downto 0);
 	SIGNAL opcode, write_register : std_logic_vector(5 downto 0);
 	SIGNAL func_16 : std_logic_vector(15 downto 0);
 	
@@ -44,6 +45,11 @@ begin
 		result => result_s2
 	);
 	
+	br: breg port map(
+		regA => readData1,
+		regB => readData2
+	);
+	
 	mi : memory_instruction port map(
     	address		 => address_mem_ins_in, 
 		q           => mem_ins_out, 
@@ -54,7 +60,7 @@ begin
 		address    => addres_mem_data_in,
 	   q          => din,                       --se o mux der 1  write data register
 	   clock      => clk_mem,
-	   data       => ??,                        --regB
+	   data       => readData2,                        --regB
 	   wren       => memWrite
 	);
 	
