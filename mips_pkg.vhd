@@ -86,7 +86,20 @@ package	mips_pkg	is
 			clock		: in std_logic;
 			q		   : out std_logic_vector(31 downto 0)
 		);
+	end component;
 
+	component control is
+		port(
+			opcode : in std_logic_vector(5 downto 0),
+			RegDst : out std_logic;
+			Jump : out std_logic;
+			Brench : out std_logic;
+			MemRead : out std_logic;
+			MemtoReg : out std_logic;
+			MemWrite : out std_logic;
+			ALUOp : out std_logic_vector(1 downto 0);
+			ALUSrc : out std_logic
+		);
 	end component;
 	
 	-- Controle	ULAmips
