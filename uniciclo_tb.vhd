@@ -27,16 +27,20 @@ BEGIN
 		display7 => display7
 	);
 
-init: PROCESS                                               
-BEGIN 
+clockp: process
+begin
 	for i in 0 to 1000 loop
-		clk_mem <= '0';
-		clk <= '0';
-		wait for 5 ns;
-		clk_mem <= '1';
-		clk <= '1';
-		wait for 10 ns;
+	    clk <= not clk;
+	    wait for 200 ps;
 	end loop;
-END PROCESS;
+end process clockp;
+
+memclock: process
+begin
+	for i in 0 to 2000 loop
+	    clk_mem <= not clk_mem;
+	    wait for 100 ps;
+	end loop;
+end process memclock;
                                       
 END uniciclo_arch;
