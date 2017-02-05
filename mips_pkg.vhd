@@ -104,6 +104,7 @@ package	mips_pkg	is
 			RegDst : out std_logic;
 			Jump : out std_logic;
 			Branch : out std_logic;
+			BNE : out std_logic;
 			MemRead : out std_logic;
 			MemtoReg : out std_logic;
 			MemWrite : out std_logic;

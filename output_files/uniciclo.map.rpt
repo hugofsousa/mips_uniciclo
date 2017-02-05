@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uniciclo
-Sun Feb 05 15:11:41 2017
+Sun Feb 05 15:17:53 2017
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb 05 15:11:41 2017           ;
+; Analysis & Synthesis Status        ; Successful - Sun Feb 05 15:17:53 2017           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; uniciclo                                        ;
 ; Top-level Entity Name              ; uniciclo                                        ;
@@ -517,6 +517,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; jump     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; bne      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; memread  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; memtoreg ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -577,7 +578,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Feb 05 15:11:37 2017
+    Info: Processing started: Sun Feb 05 15:17:50 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uniciclo -c uniciclo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file uniciclo.vhd
@@ -623,23 +624,27 @@ Info (12021): Found 2 design units, including 1 entities, in source file control
     Info (12023): Found entity 1: control
 Info (12127): Elaborating entity "uniciclo" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at uniciclo.vhd(10): used implicit default value for signal "display" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at uniciclo.vhd(33): used implicit default value for signal "RegWrite" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(33): object "Jump" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(33): object "MemRead" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(33): object "MemtoReg" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(122): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(123): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(124): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(24): object "BNE_and_not_zero_ula" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at uniciclo.vhd(35): used implicit default value for signal "RegWrite" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(35): object "Jump" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(35): object "MemRead" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(35): object "MemtoReg" assigned a value but never read
 Warning (10492): VHDL Process Statement warning at uniciclo.vhd(125): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(126): signal "address_mem_ins_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(126): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at uniciclo.vhd(127): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(128): signal "func_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(129): signal "func_32" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(130): signal "func_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(131): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(131): signal "result_s1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(132): signal "Branch" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(132): signal "zero" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(128): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(129): signal "address_mem_ins_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(130): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(131): signal "func_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(132): signal "func_32" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(133): signal "func_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(134): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(134): signal "result_s1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(135): signal "Branch" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(135): signal "zero" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(136): signal "BNE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(136): signal "zero" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(137): signal "branch_and_zero_ula" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "somador" for hierarchy "somador:s1"
 Info (12128): Elaborating entity "memory_instruction" for hierarchy "memory_instruction:mi"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "memory_instruction:mi|altsyncram:altsyncram_component"
@@ -808,10 +813,10 @@ Warning (21074): Design contains 2 input pin(s) that do not drive logic
 Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 32 output pins
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 127 warnings
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 131 warnings
     Info: Peak virtual memory: 382 megabytes
-    Info: Processing ended: Sun Feb 05 15:11:41 2017
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Sun Feb 05 15:17:53 2017
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

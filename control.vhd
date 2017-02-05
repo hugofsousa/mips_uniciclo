@@ -10,6 +10,7 @@ ENTITY control is
 		RegDst : out std_logic;
 		Jump : out std_logic;
 		Branch : out std_logic;
+		BNE : out std_logic;
 		MemRead : out std_logic;
 		MemtoReg : out std_logic;
 		MemWrite : out std_logic;
@@ -39,6 +40,7 @@ BEGIN
 		if (opcode = "101011") then MemWrite <= '1'; else MemWrite <= '0'; end if; -- WHEN SW 0x2B
 		if (opcode = "000010") then Jump <= '1'; else Jump <= '0'; end if; -- WHEN JUMP 0X02
 		if (opcode = "000100" or opcode = "000101") then Branch <= '1'; else Branch <= '0'; end if; -- WHEN BEQ 0X04 OR BNE 0X05
+		if (opcode = "000101") then BNE <= '1'; else BNE <= '0'; end if; -- WHEN BNE 0X05
 
 		case opcode is
 			when "100011" | "101011" => ALUOp <= "00"; -- LW 0x23 or SW 0x2B
