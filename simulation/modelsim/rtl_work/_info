@@ -16,7 +16,7 @@ L5
 VNhOS08loU7U9Z<nX:B<<d0
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1486318340.856000
+Z9 !s108 1486319426.757000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/breg.vhd|
 Z11 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/breg.vhd|
 Z12 o-93 -work work -O0
@@ -54,7 +54,7 @@ L6
 V6Z4XBOo3CkhFkf2g__b:]3
 R8
 31
-Z19 !s108 1486318344.937000
+Z19 !s108 1486319431.377000
 Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/breg_ula.vhd|
 Z21 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/breg_ula.vhd|
 R12
@@ -96,7 +96,7 @@ L5
 VP?H<Djm39achUcbOikb;z0
 R8
 31
-Z27 !s108 1486318341.121000
+Z27 !s108 1486319427.028000
 Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/c_ula.vhd|
 Z29 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/c_ula.vhd|
 R12
@@ -134,7 +134,7 @@ L6
 V1MK3<CmWWI`52:S6Ia0Gi2
 R8
 31
-Z33 !s108 1486318344.376000
+Z33 !s108 1486319430.874000
 Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/control.vhd|
 Z35 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/control.vhd|
 R12
@@ -171,7 +171,7 @@ L42
 V`@dc3Aa>a55[KT;2Ocz:b1
 R8
 31
-Z39 !s108 1486318342.096000
+Z39 !s108 1486319427.613000
 Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/data_memory.vhd|
 Z41 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/data_memory.vhd|
 R12
@@ -206,7 +206,7 @@ L42
 VR^Lg[koj_7?aR4Idg^mlN1
 R8
 31
-Z44 !s108 1486318341.576000
+Z44 !s108 1486319427.303000
 Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/memory_instruction.vhd|
 Z46 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/memory_instruction.vhd|
 R12
@@ -246,7 +246,7 @@ R12
 R13
 !s100 c:e<TM_cWU:8RVTDc9?GT1
 !i10b 1
-!s108 1486318340.492000
+!s108 1486319426.596000
 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/mips_pkg.vhd|
 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/mips_pkg.vhd|
 Emultiplexador_32_bits
@@ -263,7 +263,7 @@ L6
 V43]_ATC>UhBHiKK?7?A3M1
 R8
 31
-Z50 !s108 1486318344.117000
+Z50 !s108 1486319430.238000
 Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/multiplexador_32_bits.vhd|
 Z52 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/multiplexador_32_bits.vhd|
 R12
@@ -302,7 +302,7 @@ L6
 Vki8B^P^NkE=0BWOV65]VZ2
 R8
 31
-Z56 !s108 1486318343.794000
+Z56 !s108 1486319429.873000
 Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/multiplexador_5_bits.vhd|
 Z58 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/multiplexador_5_bits.vhd|
 R12
@@ -341,7 +341,7 @@ L6
 V7Em<3;EJZmD@_4Imi<EzY1
 R8
 31
-Z61 !s108 1486318343.530000
+Z61 !s108 1486319429.240000
 Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/pc.vhd|
 Z63 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/pc.vhd|
 R12
@@ -380,7 +380,7 @@ L6
 V:AUV[2Ch4CgYGaPmEVk^R2
 R8
 31
-Z66 !s108 1486318343.019000
+Z66 !s108 1486319428.166000
 Z67 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/somador.vhd|
 Z68 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/somador.vhd|
 R12
@@ -419,7 +419,7 @@ L6
 VG`eJ2dK4`<=4^0I^PoTkE2
 R8
 31
-Z72 !s108 1486318343.274000
+Z72 !s108 1486319428.462000
 Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/ula.vhd|
 Z74 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/ula.vhd|
 R12
@@ -445,7 +445,7 @@ R13
 !s100 H<Vmk^lX2FHTC_zRjJ:?V0
 !i10b 1
 Euniciclo
-Z75 w1486318318
+Z75 w1486319371
 R16
 R2
 R3
@@ -458,7 +458,7 @@ L6
 V7bmk`<ahjh9Nj8<SO=1a22
 R8
 31
-Z78 !s108 1486318342.370000
+Z78 !s108 1486319427.882000
 Z79 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/uniciclo.vhd|
 Z80 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/uniciclo.vhd|
 R12
@@ -473,7 +473,7 @@ R4
 DEx4 work 8 uniciclo 0 22 7bmk`<ahjh9Nj8<SO=1a22
 l58
 L35
-Vami3W]?5cDI_4YR;2iO8M0
+VEPM8V=BRg5OTmH=AKDBYE2
 R8
 31
 R78
@@ -481,10 +481,10 @@ R79
 R80
 R12
 R13
-!s100 j;4RhRj_VB`:D@eSc]2??1
+!s100 `=NZ=ZC3VHgK66W5[?@HK2
 !i10b 1
 Euniciclo_tb
-Z81 w1486317404
+Z81 w1486319248
 R3
 R4
 R5
@@ -497,7 +497,7 @@ VPei0aoW?CaM8cX0]idAEg1
 R8
 31
 !i10b 1
-Z84 !s108 1486318345.466000
+Z84 !s108 1486319431.704000
 Z85 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/uniciclo_tb.vhd|
 Z86 !s107 C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/uniciclo_tb.vhd|
 R12
@@ -508,8 +508,8 @@ R4
 DEx4 work 11 uniciclo_tb 0 22 Pei0aoW?CaM8cX0]idAEg1
 l15
 L6
-VkPz?lnFZFUzciJ[bk?nM]0
-!s100 2aCO4`?:RMz@?4N<L[?Rb3
+V2cegFN9E@OkNkfUDjSg8e1
+!s100 j1<VLR5jWKRkD3L4<jFgR3
 R8
 31
 !i10b 1

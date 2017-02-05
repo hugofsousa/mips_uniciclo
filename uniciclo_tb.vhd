@@ -31,7 +31,7 @@ init: PROCESS
 BEGIN 
 	for i in 0 to 1000 loop
 		clk <= '0';
-		wait for 20 ns;
+		wait for 99 ns;
 		clk <= '1';
 	end loop;
 END PROCESS;
@@ -40,7 +40,7 @@ PROCESS
 BEGIN 
 	for i in 0 to 1000 loop
 		clk_mem <= '0';
-		wait for 5 ns;
+		wait for 33 ns;
 		clk_mem <= '1';
 	end loop;
 END PROCESS;
