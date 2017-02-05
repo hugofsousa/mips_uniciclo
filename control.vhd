@@ -42,7 +42,7 @@ BEGIN
 
 		case opcode is
 			when "100011" | "101011" => ALUOp <= "00"; -- LW 0x23 or SW 0x2B
-			when "000100" => ALUOp <= "01"; -- BEQ 0X04
+			when "000100" | "000101" => ALUOp <= "01"; -- BEQ 0X04 or BNE 0X05
 			when "000000" => ALUOp <= "10"; -- R 0x00
 			when others => ALUOp <= (others	=>	'X');	
 		end case;

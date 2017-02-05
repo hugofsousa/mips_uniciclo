@@ -63,8 +63,8 @@ begin
 	
 	PC_P : pc port map(
 		clk => clk,
-		input => address_in_pc,
-		output => address_mem_ins_in
+		address_in => address_in_pc,
+		address_out => address_mem_ins_in
 	);
 
 	bregula: breg_ula port map	(	
