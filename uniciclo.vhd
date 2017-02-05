@@ -157,7 +157,7 @@ begin
 		BNE_and_not_zero_ula <= BNE and not(zero);
 		BAZu_or_banzu <= branch_and_zero_ula or branch_and_zero_ula;
 		
-		display_32 <= mem_ins_out;
+		display_32 <= address_in_pc;
 	end process;
 	
 	process(display_32)
