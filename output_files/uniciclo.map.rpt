@@ -1,9 +1,13 @@
 Analysis & Synthesis report for uniciclo
 <<<<<<< HEAD
+<<<<<<< HEAD
 Sun Feb 05 13:57:44 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 =======
 Sun Feb 05 13:57:04 2017
+=======
+Sun Feb 05 14:01:09 2017
+>>>>>>> 4df4965ef25623bf6b5509092703e7bd8050df8b
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 >>>>>>> 7d83c3302962758c217f95eb7c79f61881fe5549
 
@@ -79,7 +83,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Feb 05 13:57:04 2017               ;
+; Analysis & Synthesis Status        ; Failed - Sun Feb 05 14:01:09 2017               ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; uniciclo                                        ;
 ; Top-level Entity Name              ; uniciclo                                        ;
@@ -501,8 +505,12 @@ Info: Running Quartus II 64-Bit Analysis & Synthesis
 =======
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+<<<<<<< HEAD
     Info: Processing started: Sun Feb 05 13:57:02 2017
 >>>>>>> 7d83c3302962758c217f95eb7c79f61881fe5549
+=======
+    Info: Processing started: Sun Feb 05 14:01:07 2017
+>>>>>>> 4df4965ef25623bf6b5509092703e7bd8050df8b
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uniciclo -c uniciclo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file uniciclo.vhd
@@ -548,7 +556,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file control
     Info (12023): Found entity 1: control
 Info (12127): Elaborating entity "uniciclo" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at uniciclo.vhd(10): used implicit default value for signal "display" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at uniciclo.vhd(16): used implicit default value for signal "func_32" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at uniciclo.vhd(33): used implicit default value for signal "RegWrite" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(33): object "Jump" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(33): object "MemRead" assigned a value but never read
@@ -559,6 +566,7 @@ Warning (10492): VHDL Process Statement warning at uniciclo.vhd(124): signal "me
 Warning (10492): VHDL Process Statement warning at uniciclo.vhd(125): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at uniciclo.vhd(126): signal "address_mem_ins_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at uniciclo.vhd(127): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(128): signal "func_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at uniciclo.vhd(129): signal "func_32" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at uniciclo.vhd(130): signal "func_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at uniciclo.vhd(131): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -716,8 +724,8 @@ Critical Warning (127002): Can't read Memory Initialization File or Hexadecimal 
 Error (12152): Can't elaborate user hierarchy "data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated" File: c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 3 errors, 20 warnings
     Error: Peak virtual memory: 359 megabytes
-    Error: Processing ended: Sun Feb 05 13:57:04 2017
-    Error: Elapsed time: 00:00:02
+    Error: Processing ended: Sun Feb 05 14:01:10 2017
+    Error: Elapsed time: 00:00:03
     Error: Total CPU time (on all processors): 00:00:02
 >>>>>>> 7d83c3302962758c217f95eb7c79f61881fe5549
 
