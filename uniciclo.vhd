@@ -47,10 +47,6 @@ begin
 		result => result_s2
 	);
 	
-	--br: breg port map(
-	--	regB => readData2       --ou podemos adicionar o r1 e o r2 para a entidade do bregula
-	--);
-	
 	mi : memory_instruction port map(
     	address		 => address_mem_ins_in, 
 		q           => mem_ins_out, 
@@ -61,7 +57,7 @@ begin
 		address    => dout(9 downto 2),
 	   q          => din,                      
 	   clock      => clk_mem,
-	   data       => readData2,                        --regB
+	   data       => readData2,
 	   wren       => memWrite
 	);
 	
@@ -72,10 +68,11 @@ begin
 	);
 
 	bregula: breg_ula port map	(	
+		ALUSrc => ALUSrc,
+		func_32 => func_32,
 		rs => rs,
 		rt => rt,
 		rd  => write_register,
-		readData1 => readData1,
 		readData2 => readData2,
 		we => RegWrite,
 		clk => clk,
@@ -92,14 +89,6 @@ begin
 		selector => RegDst,
 		result => write_register
 	);
-	
-	mux2: multiplexador_32_bits port map(
-		opt0 => readData2,
-		opt1 => func_32_shift,
-		selector => ALUSrc,
-		result => readData2    --nao sei se esta certo, quero ligar o result no B da alu
-	);
-	
 
 	mux_branch : multiplexador_32_bits port map(
 		opt0 => result_s1,
