@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uniciclo
-Sun Feb 05 14:01:09 2017
+Sun Feb 05 14:54:54 2017
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Feb 05 14:01:09 2017               ;
+; Analysis & Synthesis Status        ; Failed - Sun Feb 05 14:54:54 2017               ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; uniciclo                                        ;
 ; Top-level Entity Name              ; uniciclo                                        ;
@@ -166,7 +166,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Feb 05 14:01:07 2017
+    Info: Processing started: Sun Feb 05 14:54:52 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uniciclo -c uniciclo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file uniciclo.vhd
@@ -276,9 +276,9 @@ Error (113000): Memory Initialization File or Hexadecimal (Intel-Format) File "d
 Critical Warning (127002): Can't read Memory Initialization File or Hexadecimal (Intel-Format) File data.mif -- setting all initial values to 0
 Error (12152): Can't elaborate user hierarchy "data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated" File: c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 3 errors, 20 warnings
-    Error: Peak virtual memory: 359 megabytes
-    Error: Processing ended: Sun Feb 05 14:01:10 2017
-    Error: Elapsed time: 00:00:03
+    Error: Peak virtual memory: 360 megabytes
+    Error: Processing ended: Sun Feb 05 14:54:54 2017
+    Error: Elapsed time: 00:00:02
     Error: Total CPU time (on all processors): 00:00:02
 
 
