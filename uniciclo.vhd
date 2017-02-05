@@ -69,7 +69,7 @@ begin
 
 	bregula: breg_ula port map	(	
 		ALUSrc => ALUSrc,
-		func_32 => func_32
+		func_32 => func_32,
 		rs => rs,
 		rt => rt,
 		rd  => write_register,

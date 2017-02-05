@@ -1,6 +1,7 @@
 library	ieee;
 use	ieee.std_logic_1164.all;
 use	ieee.numeric_std.all;
+use work.mips_pkg.all;
 
 entity breg_ula is 
 generic	(	WSIZE	:	natural	:=	32);
@@ -47,7 +48,7 @@ c_ula : entity work.c_ula port map(
 	ctrula => ctrula
 );
 
-mux : entity work.multixplexador_32_bits port map(
+mux : entity work.multiplexador_32_bits port map(
 	selector => ALUSrc,
 	opt0 => r2,
 	opt1 => func_32,
@@ -56,7 +57,6 @@ mux : entity work.multixplexador_32_bits port map(
 
 process (clk) is
 begin
-	readData1 <= r1;
 	readData2 <= r2;
 end process;
 

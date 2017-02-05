@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uniciclo
-Sun Feb 05 13:43:13 2017
+Sun Feb 05 13:57:04 2017
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Feb 05 13:43:13 2017               ;
+; Analysis & Synthesis Status        ; Failed - Sun Feb 05 13:57:04 2017               ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; uniciclo                                        ;
 ; Top-level Entity Name              ; uniciclo                                        ;
@@ -155,7 +155,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------+--------------+---------+--------------+--------------+---------------------------------+------------------------------------------------------------------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                 ; IP Include File                                                        ;
 +--------+--------------+---------+--------------+--------------+---------------------------------+------------------------------------------------------------------------+
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |uniciclo|data_memory:md        ; C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/data_memory.vhd        ;
+; Altera ; RAM: 1-PORT  ; N/A     ; N/A          ; N/A          ; |uniciclo|data_memory:md        ; C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/data_memory.vhd        ;
 ; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |uniciclo|memory_instruction:mi ; C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/memory_instruction.vhd ;
 +--------+--------------+---------+--------------+--------------+---------------------------------+------------------------------------------------------------------------+
 
@@ -166,7 +166,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Feb 05 13:43:09 2017
+    Info: Processing started: Sun Feb 05 13:57:02 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uniciclo -c uniciclo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file uniciclo.vhd
@@ -213,23 +213,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file control
 Info (12127): Elaborating entity "uniciclo" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at uniciclo.vhd(10): used implicit default value for signal "display" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at uniciclo.vhd(16): used implicit default value for signal "func_32" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at uniciclo.vhd(18): used implicit default value for signal "readData1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at uniciclo.vhd(33): used implicit default value for signal "RegWrite" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(33): object "Jump" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(33): object "MemRead" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at uniciclo.vhd(33): object "MemtoReg" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(133): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(134): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(135): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(136): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(137): signal "address_mem_ins_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(138): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(140): signal "func_32" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(141): signal "func_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(142): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(142): signal "result_s1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(143): signal "Branch" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at uniciclo.vhd(143): signal "zero" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(122): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(123): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(124): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(125): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(126): signal "address_mem_ins_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(127): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(129): signal "func_32" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(130): signal "func_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(131): signal "mem_ins_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(131): signal "result_s1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(132): signal "Branch" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at uniciclo.vhd(132): signal "zero" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "somador" for hierarchy "somador:s1"
 Info (12128): Elaborating entity "memory_instruction" for hierarchy "memory_instruction:mi"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "memory_instruction:mi|altsyncram:altsyncram_component"
@@ -251,8 +250,6 @@ Info (12133): Instantiated megafunction "memory_instruction:mi|altsyncram:altsyn
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qd81.tdf
     Info (12023): Found entity 1: altsyncram_qd81
 Info (12128): Elaborating entity "altsyncram_qd81" for hierarchy "memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated"
-Warning (113028): 246 out of 256 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
-    Warning (113027): Addresses ranging from 10 to 255 are not initialized
 Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:md"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "data_memory:md|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "data_memory:md|altsyncram:altsyncram_component"
@@ -278,10 +275,10 @@ Error (113012): Address at line 8 exceeds the specified depth (256) in the Memor
 Error (113000): Memory Initialization File or Hexadecimal (Intel-Format) File "data.mif" contains illegal syntax at line 8 File: C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/data.mif Line: 8
 Critical Warning (127002): Can't read Memory Initialization File or Hexadecimal (Intel-Format) File data.mif -- setting all initial values to 0
 Error (12152): Can't elaborate user hierarchy "data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated" File: c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 3 errors, 23 warnings
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 3 errors, 20 warnings
     Error: Peak virtual memory: 359 megabytes
-    Error: Processing ended: Sun Feb 05 13:43:13 2017
-    Error: Elapsed time: 00:00:04
+    Error: Processing ended: Sun Feb 05 13:57:04 2017
+    Error: Elapsed time: 00:00:02
     Error: Total CPU time (on all processors): 00:00:02
 
 
