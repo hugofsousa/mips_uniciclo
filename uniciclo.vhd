@@ -33,7 +33,7 @@ entity uniciclo is
 end entity;
 
 architecture rtl of uniciclo is
-	SIGNAL result_s1, result_s2, result_mux_branch, four, address_mem_ins_in_32 : std_logic_vector(31 downto 0);
+	SIGNAL display_32, result_s1, result_s2, result_mux_branch, four, address_mem_ins_in_32 : std_logic_vector(31 downto 0);
 	SIGNAL address_in_pc, mem_ins_out, func_32, func_32_shift, mux_jump_in_B : std_logic_vector(31 downto 0);
 	SIGNAL address_mem_ins_in : std_logic_vector(7 downto 0);
 	SIGNAL readData1, readData2 : std_logic_vector(31 downto 0);
@@ -157,14 +157,19 @@ begin
 		BNE_and_not_zero_ula <= BNE and not(zero);
 		BAZu_or_banzu <= branch_and_zero_ula or branch_and_zero_ula;
 		
-		display0 <= to_display(1);
-		display1 <= to_display(2);
-		display2 <= to_display(3);
-		display3 <= to_display(4);
-		display4 <= to_display(5);
-		display5 <= to_display(6);
-		display6 <= to_display(7);
-		display7 <= to_display(8);
+		display_32 <= dout;
+	end process;
+	
+	process(display_32)
+	begin
+		display0 <= to_display(to_integer(unsigned(display_32(3 downto 0))));
+		display1 <= to_display(to_integer(unsigned(display_32(7 downto 4))));
+		display2 <= to_display(to_integer(unsigned(display_32(11 downto 8))));
+		display3 <= to_display(to_integer(unsigned(display_32(15 downto 12))));
+		display4 <= to_display(to_integer(unsigned(display_32(19 downto 16))));
+		display5 <= to_display(to_integer(unsigned(display_32(23 downto 20))));
+		display6 <= to_display(to_integer(unsigned(display_32(27 downto 24))));
+		display7 <= to_display(to_integer(unsigned(display_32(31 downto 28))));
 	end process;
 end architecture;
 
