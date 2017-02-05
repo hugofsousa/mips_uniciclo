@@ -7,8 +7,29 @@ entity uniciclo is
 	port(
 		clk : in std_logic;
 		clk_mem : in std_logic;								-- clock da memoria
-		display : out std_logic_vector(31 downto 0)
+		display0, display1, display2, display3, display4, display5, display6, display7 : out std_logic_vector(6 downto 0)
 	);
+	
+	function to_display(number : integer)
+	return std_logic_vector is
+		variable  segment7 : std_logic_vector(6 downto 0);
+	begin
+		case  number is
+		when 0 => segment7 := "0000001";  -- '0'
+		when 1 => segment7 := "1001111";  -- '1'
+		when 2 => segment7 := "0010010";  -- '2'
+		when 3 => segment7 := "0000110";  -- '3'
+		when 4 => segment7 := "1001100";  -- '4' 
+		when 5 => segment7 := "0100100";  -- '5'
+		when 6 => segment7 := "0100000";  -- '6'
+		when 7 => segment7 := "0001111";  -- '7'
+		when 8 => segment7 := "0000000";  -- '8'
+		when 9 => segment7 := "0000100";  -- '9'
+		when others=> segment7 := "1111111"; 
+		end case;
+		
+		return segment7;
+	end to_display;
 end entity;
 
 architecture rtl of uniciclo is
@@ -19,7 +40,9 @@ architecture rtl of uniciclo is
 	SIGNAL opcode : std_logic_vector(5 downto 0);
 	SIGNAL write_register : std_logic_vector(4 downto 0);
 	SIGNAL func_16 : std_logic_vector(15 downto 0);
-	SIGNAL branch_and_zero_ula : std_logic;
+	
+	-- bazu_or_banzu = branch_and_zero_ula OR BNE_and_not_zero_ula
+	SIGNAL branch_and_zero_ula, BNE_and_not_zero_ula, bazu_or_banzu : std_logic;
 	
 	-- bregula signals
 	SIGNAL rs, rt, rd : std_logic_vector(4 downto 0);
@@ -30,7 +53,7 @@ architecture rtl of uniciclo is
 	SIGNAL zero : std_logic;
 	
 	-- control signals
-	SIGNAL RegDst, ALUSrc, RegWrite, Jump, Branch, MemRead, MemtoReg, MemWrite : std_logic;
+	SIGNAL RegDst, ALUSrc, RegWrite, Jump, Branch, BNE, MemRead, MemtoReg, MemWrite : std_logic;
 	SIGNAL ALUOp : std_logic_vector(1 downto 0);
 begin
 	s1: somador port map (
@@ -63,8 +86,8 @@ begin
 	
 	PC_P : pc port map(
 		clk => clk,
-		input => address_in_pc,
-		output => address_mem_ins_in
+		address_in => address_in_pc,
+		address_out => address_mem_ins_in
 	);
 
 	bregula: breg_ula port map	(	
@@ -93,7 +116,7 @@ begin
 	mux_branch : multiplexador_32_bits port map(
 		opt0 => result_s1,
 		opt1 => result_s2,
-		selector => branch_and_zero_ula,
+		selector => BAZu_or_banzu,
 		result => result_mux_branch
 	);
 
@@ -109,6 +132,7 @@ begin
 		RegDst => RegDst,
 		Jump => Jump,
 		Branch => Branch,
+		BNE => BNE,
 		MemRead => MemRead,
 		MemtoReg => MemtoReg,
 		MemWrite => MemWrite,
@@ -130,8 +154,18 @@ begin
 		func_6 <= func_16(5 downto 0);
 		mux_jump_in_B <= std_logic_vector(shift_left(signed(mem_ins_out(25 downto 0)), 2)) & "00" & result_s1(31 downto 28);
 		branch_and_zero_ula <= Branch and zero;
+		BNE_and_not_zero_ula <= BNE and not(zero);
+		BAZu_or_banzu <= branch_and_zero_ula or branch_and_zero_ula;
+		
+		display0 <= to_display(1);
+		display1 <= to_display(2);
+		display2 <= to_display(3);
+		display3 <= to_display(4);
+		display4 <= to_display(5);
+		display5 <= to_display(6);
+		display6 <= to_display(7);
+		display7 <= to_display(8);
 	end process;
 end architecture;
-
 
 

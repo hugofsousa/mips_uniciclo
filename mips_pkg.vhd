@@ -68,9 +68,9 @@ package	mips_pkg	is
 		generic	(	WSIZE	:	natural	:=	32);
 		port(
 			clk : in std_logic;
-			input : in std_logic_vector ((WSIZE - 1) downto 0);
+			address_in : in std_logic_vector ((WSIZE - 1) downto 0);
 
-			output : out std_logic_vector (7 downto 0)
+			address_out : out std_logic_vector (7 downto 0)
 		);
 	end component;
 	
@@ -104,6 +104,7 @@ package	mips_pkg	is
 			RegDst : out std_logic;
 			Jump : out std_logic;
 			Branch : out std_logic;
+			BNE : out std_logic;
 			MemRead : out std_logic;
 			MemtoReg : out std_logic;
 			MemWrite : out std_logic;
@@ -129,5 +130,7 @@ package	mips_pkg	is
 	constant	ULA_SUB :	std_logic_vector(3	downto	0)	:=	"0110";	-- 6
 	constant	ULA_SLT :	std_logic_vector(3	downto	0)	:=	"0111";	-- 7
 	constant	ULA_NOR :	std_logic_vector(3	downto	0)	:=	"1100";	-- 12
+	constant	ULA_SLL :	std_logic_vector(3	downto	0)	:=	"0011";	-- 3 CORRIGIR
+	constant	ULA_SRL :	std_logic_vector(3	downto	0)	:=	"0100";	-- 4 CORRIGIR
 	constant	ULA_UKW :	std_logic_vector(3	downto	0)	:=	"XXXX";
 end	mips_pkg;

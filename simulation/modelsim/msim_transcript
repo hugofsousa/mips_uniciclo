@@ -10,14 +10,44 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/Uniciclo/mips_pkg.vhd}
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/mips_pkg.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package mips_pkg
-# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo.vhd}
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/breg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity breg
+# -- Compiling architecture rtl of breg
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/c_ula.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity c_ula
+# -- Compiling architecture rtl of c_ula
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/memory_instruction.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity memory_instruction
+# -- Compiling architecture SYN of memory_instruction
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/data_memory.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity data_memory
+# -- Compiling architecture SYN of data_memory
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/uniciclo.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -26,7 +56,7 @@
 # -- Loading package mips_pkg
 # -- Compiling entity uniciclo
 # -- Compiling architecture rtl of uniciclo
-# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/Uniciclo/somador.vhd}
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/somador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -35,8 +65,68 @@
 # -- Loading package mips_pkg
 # -- Compiling entity somador
 # -- Compiling architecture rtl of somador
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/ula.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mips_pkg
+# -- Compiling entity ula
+# -- Compiling architecture behavioral of ula
+# ** Warning: C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/ula.vhd(34): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
 # 
-# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/Uniciclo/uniciclo_tb.vhd}
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/pc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mips_pkg
+# -- Compiling entity pc
+# -- Compiling architecture rtl of pc
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/multiplexador_5_bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mips_pkg
+# -- Compiling entity multiplexador_5_bits
+# -- Compiling architecture rtl of multiplexador_5_bits
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/multiplexador_32_bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mips_pkg
+# -- Compiling entity multiplexador_32_bits
+# -- Compiling architecture rtl of multiplexador_32_bits
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mips_pkg
+# -- Compiling entity control
+# -- Compiling architecture rtl of control
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/breg_ula.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package mips_pkg
+# -- Compiling entity breg_ula
+# -- Compiling architecture rtl of breg_ula
+# -- Loading entity ula
+# -- Loading entity breg
+# -- Loading entity c_ula
+# -- Loading entity multiplexador_32_bits
+# 
+# vcom -93 -work work {C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/uniciclo_tb.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -54,6 +144,21 @@
 # Loading work.mips_pkg
 # Loading work.uniciclo(rtl)
 # Loading work.somador(rtl)
+# Loading work.memory_instruction(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.data_memory(syn)
+# Loading work.pc(rtl)
+# Loading work.breg_ula(rtl)
+# Loading work.ula(behavioral)
+# Loading work.breg(rtl)
+# Loading work.c_ula(rtl)
+# Loading work.multiplexador_32_bits(rtl)
+# Loading work.multiplexador_5_bits(rtl)
+# Loading work.control(rtl)
 # 
 # add wave *
 # view structure
@@ -61,3 +166,7 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /uniciclo_tb/i1/bregula/breg
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /uniciclo_tb/i1/bregula/breg
