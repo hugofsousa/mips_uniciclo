@@ -69,7 +69,7 @@ package	mips_pkg	is
 			clk : in std_logic;
 			input : in std_logic_vector ((WSIZE - 1) downto 0);
 
-			output : out std_logic_vesctor (7 downto 0)
+			output : out std_logic_vector (7 downto 0)
 		);
 	end component;
 	
@@ -102,7 +102,7 @@ package	mips_pkg	is
 			opcode : in std_logic_vector(5 downto 0);
 			RegDst : out std_logic;
 			Jump : out std_logic;
-			Brench : out std_logic;
+			Branch : out std_logic;
 			MemRead : out std_logic;
 			MemtoReg : out std_logic;
 			MemWrite : out std_logic;

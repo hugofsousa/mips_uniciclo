@@ -11,14 +11,14 @@ ENTITY multiplexador_32_bits is
 	);
 END ENTITY;
 
-ARCHITECTURE rtl of somador is
+ARCHITECTURE rtl of multiplexador_32_bits is
 
 BEGIN
 	PROCESS(selector)
 	BEGIN
 		case selector is
 		when '0' => result <= opt0;
-		others => result <= opt1;
+		when others => result <= opt1;
 		end case;
 	END PROCESS;
 END ARCHITECTURE;

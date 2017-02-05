@@ -12,15 +12,17 @@ entity uniciclo is
 end entity;
 
 architecture rtl of uniciclo is
-	SIGNAL result_s1, result_s2, result_mux_branch, four, address_in_pc, mem_ins_out, func_32, func_32_shift : std_logic_vector(31 downto 0);
+	SIGNAL result_s1, result_s2, result_mux_branch, four, address_mem_ins_in_32 : std_logic_vector(31 downto 0);
+	SIGNAL address_in_pc, mem_ins_out, func_32, func_32_shift, mux_jump_in_B : std_logic_vector(31 downto 0);
 	SIGNAL address_mem_ins_in : std_logic_vector(7 downto 0);
 	SIGNAL readData1, readData2 : std_logic_vector(31 downto 0);
-	SIGNAL opcode, write_register : std_logic_vector(5 downto 0);
+	SIGNAL opcode : std_logic_vector(5 downto 0);
+	SIGNAL write_register : std_logic_vector(4 downto 0);
 	SIGNAL func_16 : std_logic_vector(15 downto 0);
+	SIGNAL branch_and_zero_ula : std_logic;
 	
 	-- bregula signals
 	SIGNAL rs, rt, rd : std_logic_vector(4 downto 0);
-	SIGNAL clk : std_logic;
 	SIGNAL din : std_logic_vector(31 downto 0);
 	SIGNAL func_6 : std_logic_vector(5 downto 0);
 	SIGNAL opula : std_logic_vector(1 downto 0);
@@ -33,7 +35,7 @@ architecture rtl of uniciclo is
 begin
 	s1: somador port map (
 		clk => clk,
-		A => address_mem_ins,
+		A => address_mem_ins_in_32,
 		B => four,
 		result => result_s1
 	);
@@ -45,9 +47,9 @@ begin
 		result => result_s2
 	);
 	
-	br: breg port map(
-		regB => readData2       --ou podemos adicionar o r1 e o r2 para a entidade do bregula
-	);
+	--br: breg port map(
+	--	regB => readData2       --ou podemos adicionar o r1 e o r2 para a entidade do bregula
+	--);
 	
 	mi : memory_instruction port map(
     	address		 => address_mem_ins_in, 
@@ -63,10 +65,10 @@ begin
 	   wren       => memWrite
 	);
 	
-	pc : pc port map(
-		clock => clk,
-		address_in => address_in_pc,
-		address_out => address_mem_ins_in
+	PC_P : pc port map(
+		clk => clk,
+		input => address_in_pc,
+		output => address_mem_ins_in
 	);
 
 	bregula: breg_ula port map	(	
@@ -108,7 +110,7 @@ begin
 
 	mux_jump : multiplexador_32_bits port map(
 		opt0 => result_mux_branch,
-		--opt1 => ,
+		opt1 => mux_jump_in_B,
 		selector => RegDst,
 		result => address_in_pc
 	);
@@ -132,10 +134,12 @@ begin
 		rs <= mem_ins_out(25 downto 21);
 		rt <= mem_ins_out(20 downto 16);
 		rd <= mem_ins_out(15 downto 11);
+		address_mem_ins_in_32 <= address_mem_ins_in & "000000000000000000000000";
 		func_16 <= mem_ins_out(15 downto 0);
 		--func_32 <= func_16  -- Sign-extend
 		func_32_shift <= std_logic_vector(shift_left(signed(func_32), 2));
-		func_6 <= func(5 downto 0);
+		func_6 <= func_16(5 downto 0);
+		mux_jump_in_B <= std_logic_vector(shift_left(signed(mem_ins_out(25 downto 0)), 2)) & "00" & result_s1(31 downto 28);
 		branch_and_zero_ula <= Branch and zero;
 	end process;
 end architecture;
