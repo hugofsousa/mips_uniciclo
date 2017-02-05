@@ -1,6 +1,6 @@
 Analysis & Synthesis report for uniciclo
-Sun Feb 05 13:43:13 2017
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Sun Feb 05 13:57:44 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -11,7 +11,24 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
   5. Analysis & Synthesis IP Cores Summary
-  6. Analysis & Synthesis Messages
+  6. Source assignments for memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated
+  7. Source assignments for data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated
+  8. Parameter Settings for User Entity Instance: somador:s1
+  9. Parameter Settings for User Entity Instance: somador:s2
+ 10. Parameter Settings for User Entity Instance: memory_instruction:mi|altsyncram:altsyncram_component
+ 11. Parameter Settings for User Entity Instance: data_memory:md|altsyncram:altsyncram_component
+ 12. Parameter Settings for User Entity Instance: pc:PC_P
+ 13. Parameter Settings for User Entity Instance: breg_ula:bregula
+ 14. Parameter Settings for User Entity Instance: breg_ula:bregula|ula:ula
+ 15. Parameter Settings for User Entity Instance: breg_ula:bregula|breg:breg
+ 16. Port Connectivity Checks: "control:ctrl"
+ 17. Port Connectivity Checks: "multiplexador_32_bits:mux_jump"
+ 18. Port Connectivity Checks: "multiplexador_32_bits:mux2"
+ 19. Port Connectivity Checks: "breg_ula:bregula"
+ 20. Port Connectivity Checks: "pc:PC_P"
+ 21. Port Connectivity Checks: "somador:s2"
+ 22. Port Connectivity Checks: "somador:s1"
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -34,24 +51,24 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Feb 05 13:43:13 2017               ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; uniciclo                                        ;
-; Top-level Entity Name              ; uniciclo                                        ;
-; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Sun Feb 05 13:57:44 2017          ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; uniciclo                                   ;
+; Top-level Entity Name              ; uniciclo                                   ;
+; Family                             ; Cyclone II                                 ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -145,28 +162,304 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                    ;
-+--------+--------------+---------+--------------+--------------+---------------------------------+------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                 ; IP Include File                                                        ;
-+--------+--------------+---------+--------------+--------------+---------------------------------+------------------------------------------------------------------------+
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |uniciclo|data_memory:md        ; C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/data_memory.vhd        ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |uniciclo|memory_instruction:mi ; C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/memory_instruction.vhd ;
-+--------+--------------+---------+--------------+--------------+---------------------------------+------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                             ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-----------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                 ; IP Include File                                                 ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-----------------------------------------------------------------+
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |uniciclo|data_memory:md        ; C:/Users/Cristiane/Desktop/mips_uniciclo/data_memory.vhd        ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |uniciclo|memory_instruction:mi ; C:/Users/Cristiane/Desktop/mips_uniciclo/memory_instruction.vhd ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-----------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Source assignments for memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                            ;
++---------------------------------+--------------------+------+-----------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                             ;
++---------------------------------+--------------------+------+-----------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Source assignments for data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------+
+; Assignment                      ; Value              ; From ; To                                     ;
++---------------------------------+--------------------+------+----------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                      ;
++---------------------------------+--------------------+------+----------------------------------------+
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somador:s1 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; wsize          ; 32    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somador:s2 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; wsize          ; 32    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory_instruction:mi|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------------+
+; Parameter Name                     ; Value                ; Type                                   ;
++------------------------------------+----------------------+----------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                         ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                ;
+; WIDTH_A                            ; 32                   ; Signed Integer                         ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                         ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                         ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                ;
+; WIDTH_B                            ; 1                    ; Untyped                                ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                         ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
+; INIT_FILE                          ; instruction.mif      ; Untyped                                ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                ;
+; CBXI_PARAMETER                     ; altsyncram_qd81      ; Untyped                                ;
++------------------------------------+----------------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memory:md|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+---------------------------------+
+; Parameter Name                     ; Value                ; Type                            ;
++------------------------------------+----------------------+---------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                         ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                  ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                         ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                         ;
+; WIDTH_A                            ; 32                   ; Signed Integer                  ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                  ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                  ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                         ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                         ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                         ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                         ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                         ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                         ;
+; WIDTH_B                            ; 1                    ; Untyped                         ;
+; WIDTHAD_B                          ; 1                    ; Untyped                         ;
+; NUMWORDS_B                         ; 1                    ; Untyped                         ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                         ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                         ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                         ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                         ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                         ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                         ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                         ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                         ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                         ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                         ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                         ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                         ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                  ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                         ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                         ;
+; BYTE_SIZE                          ; 8                    ; Untyped                         ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                         ;
+; INIT_FILE                          ; data.mif             ; Untyped                         ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                         ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                         ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                         ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                         ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                         ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                         ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                         ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                         ;
+; CBXI_PARAMETER                     ; altsyncram_lnc1      ; Untyped                         ;
++------------------------------------+----------------------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pc:PC_P ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; wsize          ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: breg_ula:bregula ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; wsize          ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: breg_ula:bregula|ula:ula ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; wsize          ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: breg_ula:bregula|breg:breg ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; wsize          ; 32    ; Signed Integer                                 ;
+; isize          ; 5     ; Signed Integer                                 ;
+; bregsize       ; 32    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "control:ctrl"                                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; jump     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; memread  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; memtoreg ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "multiplexador_32_bits:mux_jump" ;
++------------+-------+----------+----------------------------+
+; Port       ; Type  ; Severity ; Details                    ;
++------------+-------+----------+----------------------------+
+; opt1[7..4] ; Input ; Info     ; Stuck at GND               ;
++------------+-------+----------+----------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "multiplexador_32_bits:mux2" ;
++------------+-------+----------+------------------------+
+; Port       ; Type  ; Severity ; Details                ;
++------------+-------+----------+------------------------+
+; opt1[1..0] ; Input ; Info     ; Stuck at GND           ;
++------------+-------+----------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "breg_ula:bregula"                                                                                                   ;
++--------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity         ; Details                                                                                             ;
++--------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; readdata1    ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Input" but port on entity declared as "Output" ;
+; readdata2    ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Input" but port on entity declared as "Output" ;
+; dout[31..10] ; Output ; Info             ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                 ;
+; dout[1..0]   ; Output ; Info             ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                 ;
++--------------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pc:PC_P"                                                                                                                                                     ;
++-------------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type    ; Severity         ; Details                                                                                                                                      ;
++-------------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; input       ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; output      ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                                                       ;
+; address_in  ; Input   ; Warning          ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; address_out ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++-------------+---------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "somador:s2"    ;
++---------+-------+----------+--------------+
+; Port    ; Type  ; Severity ; Details      ;
++---------+-------+----------+--------------+
+; b[1..0] ; Input ; Info     ; Stuck at GND ;
++---------+-------+----------+--------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "somador:s1"     ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; a[23..0] ; Input ; Info     ; Stuck at GND ;
+; b[31..3] ; Input ; Info     ; Stuck at GND ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND ;
+; b[2]     ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
 
 
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Feb 05 13:43:09 2017
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Sun Feb 05 13:57:39 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uniciclo -c uniciclo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file uniciclo.vhd
@@ -251,8 +544,6 @@ Info (12133): Instantiated megafunction "memory_instruction:mi|altsyncram:altsyn
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qd81.tdf
     Info (12023): Found entity 1: altsyncram_qd81
 Info (12128): Elaborating entity "altsyncram_qd81" for hierarchy "memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated"
-Warning (113028): 246 out of 256 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
-    Warning (113027): Addresses ranging from 10 to 255 are not initialized
 Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:md"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "data_memory:md|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "data_memory:md|altsyncram:altsyncram_component"
@@ -274,14 +565,106 @@ Info (12133): Instantiated megafunction "data_memory:md|altsyncram:altsyncram_co
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_lnc1.tdf
     Info (12023): Found entity 1: altsyncram_lnc1
 Info (12128): Elaborating entity "altsyncram_lnc1" for hierarchy "data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated"
-Error (113012): Address at line 8 exceeds the specified depth (256) in the Memory Initialization File "data.mif" File: C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/data.mif Line: 8
-Error (113000): Memory Initialization File or Hexadecimal (Intel-Format) File "data.mif" contains illegal syntax at line 8 File: C:/Users/TEMP.W311918.000/Desktop/mips_uniciclo/data.mif Line: 8
-Critical Warning (127002): Can't read Memory Initialization File or Hexadecimal (Intel-Format) File data.mif -- setting all initial values to 0
-Error (12152): Can't elaborate user hierarchy "data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated" File: c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 3 errors, 23 warnings
-    Error: Peak virtual memory: 359 megabytes
-    Error: Processing ended: Sun Feb 05 13:43:13 2017
-    Error: Elapsed time: 00:00:04
-    Error: Total CPU time (on all processors): 00:00:02
+Warning (113028): 246 out of 256 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
+    Warning (113027): Addresses ranging from 10 to 255 are not initialized
+Info (12128): Elaborating entity "pc" for hierarchy "pc:PC_P"
+Info (12128): Elaborating entity "breg_ula" for hierarchy "breg_ula:bregula"
+Warning (10492): VHDL Process Statement warning at breg_ula.vhd(53): signal "r1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at breg_ula.vhd(54): signal "r2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "ula" for hierarchy "breg_ula:bregula|ula:ula"
+Info (12128): Elaborating entity "breg" for hierarchy "breg_ula:bregula|breg:breg"
+Info (12128): Elaborating entity "c_ula" for hierarchy "breg_ula:bregula|c_ula:c_ula"
+Warning (10631): VHDL Process Statement warning at c_ula.vhd(18): inferring latch(es) for signal or variable "c4", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "c4[0]" at c_ula.vhd(18)
+Info (10041): Inferred latch for "c4[1]" at c_ula.vhd(18)
+Info (10041): Inferred latch for "c4[2]" at c_ula.vhd(18)
+Info (10041): Inferred latch for "c4[3]" at c_ula.vhd(18)
+Info (12128): Elaborating entity "multiplexador_5_bits" for hierarchy "multiplexador_5_bits:mux1"
+Warning (10492): VHDL Process Statement warning at multiplexador_5_bits.vhd(20): signal "opt0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at multiplexador_5_bits.vhd(21): signal "opt1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "multiplexador_32_bits" for hierarchy "multiplexador_32_bits:mux2"
+Warning (10492): VHDL Process Statement warning at multiplexador_32_bits.vhd(20): signal "opt0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at multiplexador_32_bits.vhd(21): signal "opt1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "control" for hierarchy "control:ctrl"
+Warning (10541): VHDL Signal Declaration warning at control.vhd(10): used implicit default value for signal "RegDst" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at control.vhd(11): used implicit default value for signal "Jump" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at control.vhd(12): used implicit default value for signal "Branch" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at control.vhd(13): used implicit default value for signal "MemRead" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at control.vhd(14): used implicit default value for signal "MemtoReg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at control.vhd(15): used implicit default value for signal "MemWrite" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at control.vhd(16): used implicit default value for signal "ALUOp" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at control.vhd(17): used implicit default value for signal "ALUSrc" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData1".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12012): Port direction mismatch for entity "breg_ula:bregula" at port "readData2".  Upper entity is expecting "Input" pin while lower entity is using "Output" pin. File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 74
+Error (12002): Port "input" does not exist in macrofunction "PC_P" File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 68
+Error (12002): Port "output" does not exist in macrofunction "PC_P" File: C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd Line: 68
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 66 errors, 38 warnings
+    Error: Peak virtual memory: 517 megabytes
+    Error: Processing ended: Sun Feb 05 13:57:44 2017
+    Error: Elapsed time: 00:00:05
+    Error: Total CPU time (on all processors): 00:00:04
 
 
