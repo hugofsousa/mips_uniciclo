@@ -125,7 +125,7 @@ begin
 		rd <= mem_ins_out(15 downto 11);
 		address_mem_ins_in_32 <= address_mem_ins_in & "000000000000000000000000";
 		func_16 <= mem_ins_out(15 downto 0);
-		--func_32 <= func_16  -- Sign-extend
+		func_32 <= std_logic_vector(resize(signed(func_16), func_32'length));
 		func_32_shift <= std_logic_vector(shift_left(signed(func_32), 2));
 		func_6 <= func_16(5 downto 0);
 		mux_jump_in_B <= std_logic_vector(shift_left(signed(mem_ins_out(25 downto 0)), 2)) & "00" & result_s1(31 downto 28);
