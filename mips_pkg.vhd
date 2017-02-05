@@ -8,6 +8,7 @@ package	mips_pkg	is
 		generic	(	WSIZE	:	natural	:=	32);
 		port(
 			rs,rt, rd : in std_logic_vector(4 downto 0);
+			readData1, readData2 : in std_logic_vector(31 downto 0);
 			we, clk : in std_logic;
 			din : in std_logic_vector(31 downto 0);
 			func : in std_logic_vector(5 downto 0);
@@ -79,6 +80,14 @@ package	mips_pkg	is
 			result : out std_logic_vector (4 downto 0)
 		);
 	end component;
+	
+	component multiplexador_32_bits is
+		port(
+			selector : in std_logic;
+			opt0, opt1 : in std_logic_vector (31 downto 0);
+			result : out std_logic_vector (31 downto 0)
+		);
+	end component;
 
 	component memory_instruction is
 		port(
@@ -90,7 +99,7 @@ package	mips_pkg	is
 
 	component control is
 		port(
-			opcode : in std_logic_vector(5 downto 0),
+			opcode : in std_logic_vector(5 downto 0);
 			RegDst : out std_logic;
 			Jump : out std_logic;
 			Brench : out std_logic;

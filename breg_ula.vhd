@@ -6,6 +6,7 @@ entity breg_ula is
 generic	(	WSIZE	:	natural	:=	32);
 port(
 	rs,rt, rd : in std_logic_vector(4 downto 0);
+	readData1, readData2 : in std_logic_vector(31 downto 0);
    we, clk : in std_logic;
 	din : in std_logic_vector(31 downto 0);
 	func : in std_logic_vector(5 downto 0);
@@ -20,10 +21,15 @@ signal r1,r2  : std_logic_vector(31 downto 0);
 signal ctrula : std_logic_vector(3 downto 0);
 begin
 
+readData1 => r1;
+readData2 => r2;
+
 ula : entity work.ula port map(
 	ulop  => ctrula,
 	A	   => r1,
+	--A     => readData1,
 	B     => r2,
+	--B     => readData2,
 	aluout => dout,
 	zero  => zero
 );

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uniciclo
-Fri Feb 03 23:56:19 2017
+Sat Feb 04 22:21:23 2017
 Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Feb 03 23:56:19 2017          ;
+; Analysis & Synthesis Status        ; Failed - Sat Feb 04 22:21:22 2017          ;
 ; Quartus II 32-bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; uniciclo                                   ;
 ; Top-level Entity Name              ; uniciclo                                   ;
@@ -155,7 +155,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Fri Feb 03 23:56:16 2017
+    Info: Processing started: Sat Feb 04 22:21:19 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uniciclo -c uniciclo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file uniciclo.vhd
@@ -172,27 +172,32 @@ Info (12021): Found 1 design units, including 0 entities, in source file mips_pk
 Info (12021): Found 2 design units, including 1 entities, in source file breg.vhd
     Info (12022): Found design unit 1: breg-rtl
     Info (12023): Found entity 1: breg
-Info (12021): Found 2 design units, including 1 entities, in source file breg_ula.vhd
-    Info (12022): Found design unit 1: breg_ula-rtl
-    Info (12023): Found entity 1: breg_ula
+Error (10500): VHDL syntax error at breg_ula.vhd(24) near text "=>";  expecting "(", or "'", or "." File: C:/Users/Cristiane/Desktop/mips_uniciclo/breg_ula.vhd Line: 24
+Error (10500): VHDL syntax error at breg_ula.vhd(25) near text "=>";  expecting "(", or "'", or "." File: C:/Users/Cristiane/Desktop/mips_uniciclo/breg_ula.vhd Line: 25
+Info (12021): Found 0 design units, including 0 entities, in source file breg_ula.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file c_ula.vhd
     Info (12022): Found design unit 1: c_ula-rtl
     Info (12023): Found entity 1: c_ula
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
     Info (12022): Found design unit 1: ula-behavioral
     Info (12023): Found entity 1: ula
-Error (10500): VHDL syntax error at pc.vhd(17) near text "address_in";  expecting "begin", or a declaration statement File: C:/Users/Cristiane/Desktop/mips_uniciclo/pc.vhd Line: 17
-Info (12021): Found 0 design units, including 0 entities, in source file pc.vhd
-Error (10500): VHDL syntax error at multiplexador_5_bits.vhd(20) near text "when";  expecting "is" File: C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_5_bits.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
+    Info (12022): Found design unit 1: pc-rtl
+    Info (12023): Found entity 1: pc
 Error (10500): VHDL syntax error at multiplexador_5_bits.vhd(21) near text "others";  expecting "end", or "(", or an identifier ("others" is a reserved keyword), or a sequential statement File: C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_5_bits.vhd Line: 21
 Info (12021): Found 0 design units, including 0 entities, in source file multiplexador_5_bits.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file memory_instruction.vhd
     Info (12022): Found design unit 1: memory_instruction-SYN
     Info (12023): Found entity 1: memory_instruction
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
+Info (12021): Found 2 design units, including 1 entities, in source file data_memory.vhd
+    Info (12022): Found design unit 1: data_memory-SYN
+    Info (12023): Found entity 1: data_memory
+Error (10500): VHDL syntax error at multiplexador_32_bits.vhd(21) near text "others";  expecting "end", or "(", or an identifier ("others" is a reserved keyword), or a sequential statement File: C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_32_bits.vhd Line: 21
+Info (12021): Found 0 design units, including 0 entities, in source file multiplexador_32_bits.vhd
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 4 errors, 1 warning
     Error: Peak virtual memory: 386 megabytes
-    Error: Processing ended: Fri Feb 03 23:56:19 2017
-    Error: Elapsed time: 00:00:03
+    Error: Processing ended: Sat Feb 04 22:21:23 2017
+    Error: Elapsed time: 00:00:04
     Error: Total CPU time (on all processors): 00:00:03
 
 

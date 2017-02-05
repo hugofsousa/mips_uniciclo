@@ -14,7 +14,7 @@ end entity;
 architecture rtl of uniciclo is
 	SIGNAL result_s1, result_s2, result_mux_branch, four, address_in_pc, mem_ins_out, func_32, func_32_shift : std_logic_vector(31 downto 0);
 	SIGNAL address_mem_ins_in : std_logic_vector(7 downto 0);
-	SIGNAL readData2 : std_logic_vector(31 downto 0);
+	SIGNAL readData1, readData2 : std_logic_vector(31 downto 0);
 	SIGNAL opcode, write_register : std_logic_vector(5 downto 0);
 	SIGNAL func_16 : std_logic_vector(15 downto 0);
 	
@@ -73,6 +73,8 @@ begin
 		rs => rs,
 		rt => rt,
 		rd  => write_register,
+		readData1 => readData1,
+		readData2 => readData2,
 		we => RegWrite,
 		clk => clk,
 		din => din,
@@ -88,6 +90,14 @@ begin
 		selector => RegDst,
 		result => write_register
 	);
+	
+	mux2: multiplexador_32_bits port map(
+		opt0 => readData2,
+		opt1 => func_32_shift,
+		selector => ALUSrc,
+		result => readData2    --nao sei se esta certo, quero ligar o result no B da alu
+	);
+	
 
 	mux_branch : multiplexador_32_bits port map(
 		opt0 => result_s1,
@@ -98,7 +108,7 @@ begin
 
 	mux_jump : multiplexador_32_bits port map(
 		opt0 => result_mux_branch,
-		opt1 => ,
+		--opt1 => ,
 		selector => RegDst,
 		result => address_in_pc
 	);
@@ -124,7 +134,7 @@ begin
 		rd <= mem_ins_out(15 downto 11);
 		func_16 <= mem_ins_out(15 downto 0);
 		--func_32 <= func_16  -- Sign-extend
-		func_32_shift <= std_logic_vector(shift_left(signed(func_32), 2))
+		func_32_shift <= std_logic_vector(shift_left(signed(func_32), 2));
 		func_6 <= func(5 downto 0);
 		branch_and_zero_ula <= Branch and zero;
 	end process;

@@ -7,15 +7,16 @@ ENTITY pc is
 	generic	(	WSIZE	:	natural	:=	32);
 	port(
 		clk : in std_logic;
-		address_in : in std_logic_vector ((WSIZE - 1) downto 0);
+		address_in : in std_logic_vector ((WSIZE - 1) downto 0) := "00000000000000000000000000000000" ;
 
-		address_out : out std_logic_vector (7 downto 0)
+		address_out : out std_logic_vector (7 downto 0) := "00000000"
 	);
 END ENTITY;
 
 ARCHITECTURE rtl of pc is
-	address_in := "00000000000000000000000000000000";
-	address_out := "00000000";
+--	begin			--adicionei pq estava dando erro, ver se eh necessario
+--	address_in := "00000000000000000000000000000000";
+--	address_out := "00000000";
 BEGIN
 	PROCESS(clk)
 	BEGIN
