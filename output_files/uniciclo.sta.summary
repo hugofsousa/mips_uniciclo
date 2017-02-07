@@ -3,24 +3,24 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clk'
-Slack : -11.434
-TNS   : -270.974
+Slack : -12.155
+TNS   : -299.647
 
 Type  : Slow Model Setup 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -4.544
-TNS   : -4.544
+Slack : -5.356
+TNS   : -5.356
 
 Type  : Slow Model Setup 'clk_mem'
-Slack : -0.500
-TNS   : -4.900
+Slack : -0.696
+TNS   : -5.709
 
 Type  : Slow Model Hold 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -1.456
-TNS   : -1.456
+Slack : -1.615
+TNS   : -1.615
 
 Type  : Slow Model Hold 'clk_mem'
-Slack : 0.228
-TNS   : 0.000
+Slack : -0.086
+TNS   : -0.320
 
 Type  : Slow Model Hold 'clk'
 Slack : 0.794
@@ -35,27 +35,27 @@ Slack : -1.380
 TNS   : -47.380
 
 Type  : Slow Model Minimum Pulse Width 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -0.334
-TNS   : -3.340
+Slack : -0.325
+TNS   : -3.250
 
 Type  : Fast Model Setup 'clk'
-Slack : -5.086
-TNS   : -117.990
+Slack : -5.372
+TNS   : -131.661
 
 Type  : Fast Model Setup 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -2.050
-TNS   : -2.050
+Slack : -2.496
+TNS   : -2.496
 
 Type  : Fast Model Setup 'clk_mem'
-Slack : 0.322
+Slack : 0.225
 TNS   : 0.000
 
 Type  : Fast Model Hold 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -0.596
-TNS   : -0.596
+Slack : -0.716
+TNS   : -0.716
 
 Type  : Fast Model Hold 'clk_mem'
-Slack : 0.251
+Slack : 0.052
 TNS   : 0.000
 
 Type  : Fast Model Hold 'clk'
@@ -71,7 +71,7 @@ Slack : -1.380
 TNS   : -47.380
 
 Type  : Fast Model Minimum Pulse Width 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : 0.148
+Slack : 0.107
 TNS   : 0.000
 
 ------------------------------------------------------------
