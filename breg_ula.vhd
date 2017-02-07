@@ -55,7 +55,7 @@ mux : entity work.multiplexador_32_bits port map(
 	result => mux_out
 );
 
-process (clk) is
+process (r2) is
 begin
 	readData2 <= r2;
 end process;

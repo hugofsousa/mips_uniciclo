@@ -5,8 +5,8 @@ use work.mips_pkg.all;
 
 entity uniciclo is
 	port(
-		clk : in std_logic;
-		clk_mem : in std_logic;								-- clock da memoria
+		clk : in std_logic := '1';
+		clk_mem : in std_logic := '1';								-- clock da memoria
 		display0, display1, display2, display3, display4, display5, display6, display7 : out std_logic_vector(6 downto 0)
 	);
 	
@@ -21,7 +21,7 @@ entity uniciclo is
 		when 3 => segment7 := "0000110";  -- '3'
 		when 4 => segment7 := "1001100";  -- '4' 
 		when 5 => segment7 := "0100100";  -- '5'
-		when 6 => segment7 := "0100000";  -- '6'
+	   when 6 => segment7 := "0100000";  -- '6'
 		when 7 => segment7 := "0001111";  -- '7'
 		when 8 => segment7 := "0000000";  -- '8'
 		when 9 => segment7 := "0000100";  -- '9'
@@ -33,21 +33,17 @@ entity uniciclo is
 end entity;
 
 architecture rtl of uniciclo is
-	SIGNAL display_32, result_s1, result_s2, result_mux_branch, four, address_mem_ins_in_32 : std_logic_vector(31 downto 0);
-	SIGNAL address_in_pc, mem_ins_out, func_32, func_32_shift, mux_jump_in_B : std_logic_vector(31 downto 0);
-	SIGNAL address_mem_ins_in : std_logic_vector(7 downto 0);
+	SIGNAL display_32, result_s1, result_s2, result_mux_branch, readMemoryData : std_logic_vector(31 downto 0);
+	SIGNAL address_out_pc, address_in_pc, mem_ins_out, func_32, func_32_shift, mux_jump_in_B : std_logic_vector(31 downto 0);
 	SIGNAL readData1, readData2 : std_logic_vector(31 downto 0);
 	SIGNAL opcode : std_logic_vector(5 downto 0);
 	SIGNAL write_register : std_logic_vector(4 downto 0);
-	SIGNAL func_16 : std_logic_vector(15 downto 0);
 	
 	-- bazu_or_banzu = branch_and_zero_ula OR BNE_and_not_zero_ula
 	SIGNAL branch_and_zero_ula, BNE_and_not_zero_ula, bazu_or_banzu : std_logic;
 	
 	-- bregula signals
-	SIGNAL rs, rt, rd : std_logic_vector(4 downto 0);
 	SIGNAL din : std_logic_vector(31 downto 0);
-	SIGNAL func_6 : std_logic_vector(5 downto 0);
 	SIGNAL opula : std_logic_vector(1 downto 0);
 	SIGNAL dout  : std_logic_vector(31 downto 0);
 	SIGNAL zero : std_logic;
@@ -56,11 +52,67 @@ architecture rtl of uniciclo is
 	SIGNAL RegDst, ALUSrc, RegWrite, Jump, Branch, BNE, MemRead, MemtoReg, MemWrite : std_logic;
 	SIGNAL ALUOp : std_logic_vector(1 downto 0);
 begin
+	PC_P : pc port map(
+		clk => clk,
+		address_in => address_in_pc,
+		address_out => address_out_pc
+	);
+	
 	s1: somador port map (
 		clk => clk,
-		A => address_mem_ins_in_32,
-		B => four,
+		A => address_out_pc,
+		B => "00000000000000000000000000000100",
 		result => result_s1
+	);
+	
+	mi : memory_instruction port map(
+    	address		 => address_out_pc(9 downto 2), 
+		q           => mem_ins_out, 
+		clock       => clk_mem
+	);
+	
+	ctrl : control port map (
+		opcode => mem_ins_out(31 downto 26),
+		RegDst => RegDst,
+		Jump => Jump,
+		Branch => Branch,
+		BNE => BNE,
+		MemRead => MemRead,
+		MemtoReg => MemtoReg,
+		MemWrite => MemWrite,
+		ALUOp => ALUOp,
+		RegWrite => RegWrite,
+		ALUSrc => ALUSrc
+	);
+	
+	mux1 : multiplexador_5_bits port map(
+		opt0 => mem_ins_out(20 downto 16),
+		opt1 => mem_ins_out(15 downto 11),
+		selector => RegDst,
+		result => write_register
+	);
+	
+	mux2 : multiplexador_32_bits port map(
+		opt0 => dout,
+		opt1 => readMemoryData,
+		selector => memtoReg,
+		result => din
+	);
+	
+	bregula: breg_ula port map	(	
+		ALUSrc => ALUSrc,
+		func_32 => func_32,
+		rs => mem_ins_out(25 downto 21),
+		rt => mem_ins_out(20 downto 16),
+		rd  => write_register,
+		readData2 => readData2,
+		we => RegWrite,
+		clk => clk,
+		din => din,
+		func => mem_ins_out(5 downto 0),
+		opula => ALUOp,
+		dout => dout,
+		zero => zero
 	);
 
 	s2: somador port map (
@@ -70,47 +122,12 @@ begin
 		result => result_s2
 	);
 	
-	mi : memory_instruction port map(
-    	address		 => address_mem_ins_in, 
-		q           => mem_ins_out, 
-		clock       => clk_mem
-	);
-	
 	md : data_memory port map(
 		address    => dout(9 downto 2),
-	   q          => din,                      
+	   q          => readMemoryData,                      
 	   clock      => clk_mem,
 	   data       => readData2,
 	   wren       => memWrite
-	);
-	
-	PC_P : pc port map(
-		clk => clk,
-		address_in => address_in_pc,
-		address_out => address_mem_ins_in
-	);
-
-	bregula: breg_ula port map	(	
-		ALUSrc => ALUSrc,
-		func_32 => func_32,
-		rs => rs,
-		rt => rt,
-		rd  => write_register,
-		readData2 => readData2,
-		we => RegWrite,
-		clk => clk,
-		din => din,
-		func => func_6,
-		opula => ALUOp,
-		dout => dout,
-		zero => zero
-	);
-	
-	mux1 : multiplexador_5_bits port map(
-		opt0 => rt,
-		opt1 => rd,
-		selector => RegDst,
-		result => write_register
 	);
 
 	mux_branch : multiplexador_32_bits port map(
@@ -123,41 +140,20 @@ begin
 	mux_jump : multiplexador_32_bits port map(
 		opt0 => result_mux_branch,
 		opt1 => mux_jump_in_B,
-		selector => RegDst,
+		selector => Jump,
 		result => address_in_pc
-	);
-
-	ctrl : control port map (
-		opcode => opcode,
-		RegDst => RegDst,
-		Jump => Jump,
-		Branch => Branch,
-		BNE => BNE,
-		MemRead => MemRead,
-		MemtoReg => MemtoReg,
-		MemWrite => MemWrite,
-		ALUOp => ALUOp,
-		ALUSrc => ALUSrc
 	);
 
 	process(clk)
 	begin
-		four <= "00000000000000000000000000000100";
-		opcode <= mem_ins_out(31 downto 26);
-		rs <= mem_ins_out(25 downto 21);
-		rt <= mem_ins_out(20 downto 16);
-		rd <= mem_ins_out(15 downto 11);
-		address_mem_ins_in_32 <= address_mem_ins_in & "000000000000000000000000";
-		func_16 <= mem_ins_out(15 downto 0);
-		func_32 <= std_logic_vector(resize(signed(func_16), func_32'length));
+		func_32 <= std_logic_vector(resize(signed(mem_ins_out(15 downto 0)), func_32'length));
 		func_32_shift <= std_logic_vector(shift_left(signed(func_32), 2));
-		func_6 <= func_16(5 downto 0);
-		mux_jump_in_B <= std_logic_vector(shift_left(signed(mem_ins_out(25 downto 0)), 2)) & "00" & result_s1(31 downto 28);
+		mux_jump_in_B <= result_s1(31 downto 28) & "00" & std_logic_vector(shift_left(signed(mem_ins_out(25 downto 0)), 2));
 		branch_and_zero_ula <= Branch and zero;
 		BNE_and_not_zero_ula <= BNE and not(zero);
 		BAZu_or_banzu <= branch_and_zero_ula or branch_and_zero_ula;
 		
-		display_32 <= address_in_pc;
+		display_32 <= readData2;
 	end process;
 	
 	process(display_32)

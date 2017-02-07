@@ -31,9 +31,15 @@ begin
 		then c4 <= "0110";
 	elsif(func = "000100") 
 		then c4 <= "0000";
-	elsif(func = "000101")
-		then c4 <= "0001";
+	--elsif(func = "000101")
+	--	then c4 <= "0001";
 	elsif(func = "001010")
+		then c4 <= "0111";
+	elsif(func = "100111")
+		then c4 <= "1100";
+	elsif(func = "100101")
+		then c4 <= "0001";
+	elsif(func = "101010")
 		then c4 <= "0111";
 	end if;
 	when others =>

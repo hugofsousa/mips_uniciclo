@@ -24,17 +24,15 @@ architecture	rtl	of	breg	is
    signal breg: reg_array_t(BREGSIZE-1	 downto	 0) := (others	 => (others	=>	'0'));
 begin
 -- leitura	dos	registradores
-regA	 <=	 ZERO32	 when	 (rs	 =	 "00000")	 else	
-breg(to_integer(unsigned(rs)));
-regB	 <=	 ZERO32	 when	 (rt	 =	 "00000")	 else	
-breg(to_integer(unsigned(rt)));
+regA <= ZERO32 when (rs	 =	 "00000") else	breg(to_integer(unsigned(rs)));
+regB <= ZERO32 when (rt	 =	 "00000") else	breg(to_integer(unsigned(rt)));
 -- processo	de	escrita	de	um	registrador	do	banco
 process	(clk)
 begin
 if	(rising_edge(clk))	then
-if	(we	=	'1')	then
-breg(to_integer(unsigned(rd)))	<=	d_in;
-end	if;
+	if	(we	=	'1')	then
+		breg(to_integer(unsigned(rd))) <= d_in;
+	end	if;
 end	if;
 end	process;
 end	rtl;

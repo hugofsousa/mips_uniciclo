@@ -18,9 +18,9 @@ ARCHITECTURE rtl of somador is
 BEGIN
 	PROCESS(clk)
 	BEGIN
-		if(rising_edge(clk)) then
+		if (rising_edge(clk)) then
 			result <= std_logic_vector(signed(A) + signed(B));
-		end if;
+		END IF;
 	END PROCESS;
 
 END ARCHITECTURE;

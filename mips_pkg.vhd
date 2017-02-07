@@ -70,7 +70,7 @@ package	mips_pkg	is
 			clk : in std_logic;
 			address_in : in std_logic_vector ((WSIZE - 1) downto 0);
 
-			address_out : out std_logic_vector (7 downto 0)
+			address_out : out std_logic_vector ((WSIZE - 1) downto 0)
 		);
 	end component;
 	
@@ -108,6 +108,7 @@ package	mips_pkg	is
 			MemRead : out std_logic;
 			MemtoReg : out std_logic;
 			MemWrite : out std_logic;
+			RegWrite : out std_logic;
 			ALUOp : out std_logic_vector(1 downto 0);
 			ALUSrc : out std_logic
 		);

@@ -12,9 +12,8 @@ ENTITY multiplexador_32_bits is
 END ENTITY;
 
 ARCHITECTURE rtl of multiplexador_32_bits is
-
 BEGIN
-	PROCESS(selector)
+	PROCESS(selector, opt0, opt1)
 	BEGIN
 		case selector is
 		when '0' => result <= opt0;

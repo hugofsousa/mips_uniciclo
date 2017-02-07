@@ -9,19 +9,17 @@ ENTITY pc is
 		clk : in std_logic;
 		address_in : in std_logic_vector ((WSIZE - 1) downto 0) := "00000000000000000000000000000000" ;
 
-		address_out : out std_logic_vector (7 downto 0) := "00000000"
+		address_out : out std_logic_vector ((WSIZE - 1) downto 0) := "00000000000000000000000000000000"
 	);
 END ENTITY;
 
 ARCHITECTURE rtl of pc is
---	begin			--adicionei pq estava dando erro, ver se eh necessario
---	address_in := "00000000000000000000000000000000";
---	address_out := "00000000";
+
 BEGIN
 	PROCESS(clk)
 	BEGIN
 		if(rising_edge(clk)) then
-			address_out <= address_in(9 downto 2);
+			address_out <= address_in;
 		end if;
 	END PROCESS;
 
