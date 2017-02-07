@@ -6,7 +6,8 @@ entity c_ula is
 	port(
 	  func   : in std_logic_vector(5 downto 0);
 	  opUla  : in std_logic_vector(1 downto 0);
-	  ctrula : out std_logic_vector(3 downto 0)
+	  ctrula : out std_logic_vector(3 downto 0);
+	  shamt : in std_logic_vector(4 downto 0)
 	  );
 end c_ula;
 
@@ -25,7 +26,7 @@ begin
 	when "01" =>
 	c4 <= "0110";
 	when "10" =>
-	if(func = "000000")
+	if(func = "000000" and shamt = "00000")
 		then c4 <= "0010";
 	elsif(func = "000010") 
 		then c4 <= "0110";
@@ -42,6 +43,15 @@ begin
 	elsif(func = "101010")
 		then c4 <= "0111";
 	end if;
+	
+	if(func = "000000" and shamt /= "00000")
+	then c4 <= "0011";
+	end if;
+	
+	if(func = "000010" and shamt /= "00000")
+	then c4 <= "0100";
+	end if;
+	
 	when others =>
 	c4 <= (others	=>	'X');	
 	

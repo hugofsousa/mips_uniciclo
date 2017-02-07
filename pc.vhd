@@ -6,10 +6,10 @@ use work.mips_pkg.all;
 ENTITY pc is
 	generic	(	WSIZE	:	natural	:=	32);
 	port(
-		clk : in std_logic;
-		address_in : in std_logic_vector ((WSIZE - 1) downto 0) := "00000000000000000000000000000000" ;
+		clk, reset : in std_logic;
+		address_in : in std_logic_vector ((WSIZE - 1) downto 0);
 
-		address_out : out std_logic_vector ((WSIZE - 1) downto 0) := "00000000000000000000000000000000"
+		address_out : out std_logic_vector ((WSIZE - 1) downto 0)
 	);
 END ENTITY;
 
@@ -18,8 +18,11 @@ ARCHITECTURE rtl of pc is
 BEGIN
 	PROCESS(clk)
 	BEGIN
-		if(rising_edge(clk)) then
-			address_out <= address_in;
+		if (reset = '1') then address_out <= X"00000000";
+		else
+			if(rising_edge(clk)) then
+				address_out <= address_in;
+			end if;
 		end if;
 	END PROCESS;
 

@@ -7,7 +7,7 @@ entity breg_ula is
 generic	(	WSIZE	:	natural	:=	32);
 port(
 	ALUSrc : in std_logic;
-	rs,rt, rd : in std_logic_vector(4 downto 0);
+	rs,rt, rd, shamt : in std_logic_vector(4 downto 0);
    we, clk : in std_logic;
 	din, func_32 : in std_logic_vector(31 downto 0);
 	func : in std_logic_vector(5 downto 0);
@@ -28,7 +28,8 @@ ula : entity work.ula port map(
 	A	   => r1,
 	B     => mux_out,
 	aluout => dout,
-	zero  => zero
+	zero  => zero,
+	shamt => shamt
 );
 
 breg : entity work.breg port map(
@@ -45,7 +46,8 @@ breg : entity work.breg port map(
 c_ula : entity work.c_ula port map(
 	func   => func,
 	opUla  => opula,
-	ctrula => ctrula
+	ctrula => ctrula,
+	shamt => shamt
 );
 
 mux : entity work.multiplexador_32_bits port map(

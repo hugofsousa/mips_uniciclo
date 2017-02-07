@@ -5,6 +5,7 @@ use work.mips_pkg.all;
 
 entity uniciclo is
 	port(
+		reset : in std_logic := '1';
 		clk : in std_logic := '1';
 		clk_mem : in std_logic := '1';								-- clock da memoria
 		display0, display1, display2, display3, display4, display5, display6, display7 : out std_logic_vector(6 downto 0)
@@ -54,12 +55,12 @@ architecture rtl of uniciclo is
 begin
 	PC_P : pc port map(
 		clk => clk,
+		reset => reset,
 		address_in => address_in_pc,
 		address_out => address_out_pc
 	);
 	
 	s1: somador port map (
-		clk => clk,
 		A => address_out_pc,
 		B => "00000000000000000000000000000100",
 		result => result_s1
@@ -112,11 +113,11 @@ begin
 		func => mem_ins_out(5 downto 0),
 		opula => ALUOp,
 		dout => dout,
-		zero => zero
+		zero => zero,
+		shamt => mem_ins_out(10 downto 6)
 	);
 
 	s2: somador port map (
-		clk => clk,
 		A => result_s1,
 		B => func_32_shift,
 		result => result_s2
@@ -144,29 +145,25 @@ begin
 		result => address_in_pc
 	);
 
-	process(clk)
-	begin
-		func_32 <= std_logic_vector(resize(signed(mem_ins_out(15 downto 0)), func_32'length));
-		func_32_shift <= std_logic_vector(shift_left(signed(func_32), 2));
-		mux_jump_in_B <= result_s1(31 downto 28) & "00" & std_logic_vector(shift_left(signed(mem_ins_out(25 downto 0)), 2));
-		branch_and_zero_ula <= Branch and zero;
-		BNE_and_not_zero_ula <= BNE and not(zero);
-		BAZu_or_banzu <= branch_and_zero_ula or branch_and_zero_ula;
-		
-		display_32 <= readData2;
-	end process;
+	func_32 <= X"FFFF" & mem_ins_out(15 downto 0) when mem_ins_out(15) = '1' else X"0000" & mem_ins_out(15 downto 0);
+	func_32_shift <= std_logic_vector(shift_left(signed(func_32), 2));
+	mux_jump_in_B <= result_s1(31 downto 28) & "00" & std_logic_vector(shift_left(signed(mem_ins_out(25 downto 0)), 2));
 	
-	process(display_32)
-	begin
-		display0 <= to_display(to_integer(unsigned(display_32(3 downto 0))));
-		display1 <= to_display(to_integer(unsigned(display_32(7 downto 4))));
-		display2 <= to_display(to_integer(unsigned(display_32(11 downto 8))));
-		display3 <= to_display(to_integer(unsigned(display_32(15 downto 12))));
-		display4 <= to_display(to_integer(unsigned(display_32(19 downto 16))));
-		display5 <= to_display(to_integer(unsigned(display_32(23 downto 20))));
-		display6 <= to_display(to_integer(unsigned(display_32(27 downto 24))));
-		display7 <= to_display(to_integer(unsigned(display_32(31 downto 28))));
-	end process;
+	branch_and_zero_ula <= Branch and zero;
+	BNE_and_not_zero_ula <= BNE and not(zero);
+	BAZu_or_banzu <= branch_and_zero_ula or BNE_and_not_zero_ula;
+	
+	display_32 <= readData2;
+
+	display0 <= to_display(to_integer(unsigned(display_32(3 downto 0))));
+	display1 <= to_display(to_integer(unsigned(display_32(7 downto 4))));
+	display2 <= to_display(to_integer(unsigned(display_32(11 downto 8))));
+	display3 <= to_display(to_integer(unsigned(display_32(15 downto 12))));
+	display4 <= to_display(to_integer(unsigned(display_32(19 downto 16))));
+	display5 <= to_display(to_integer(unsigned(display_32(23 downto 20))));
+	display6 <= to_display(to_integer(unsigned(display_32(27 downto 24))));
+	display7 <= to_display(to_integer(unsigned(display_32(31 downto 28))));
+
 end architecture;
 
 

@@ -34,13 +34,13 @@ BEGIN
 		end if; 
 		if (opcode = "101011") then MemWrite <= '1'; else MemWrite <= '0'; end if; -- WHEN SW 0x2B
 		if (opcode = "000010") then Jump <= '1'; else Jump <= '0'; end if; -- WHEN JUMP 0X02
-		if (opcode = "000100" or opcode = "000101") then Branch <= '1'; else Branch <= '0'; end if; -- WHEN BEQ 0X04 OR BNE 0X05
+		if (opcode = "000100") then Branch <= '1'; else Branch <= '0'; end if; -- WHEN BEQ 0X04 OR BNE 0X05
 		if (opcode = "000101") then BNE <= '1'; else BNE <= '0'; end if; -- WHEN BNE 0X05
 		if (opcode /= "101011" and opcode /= "000101" and opcode /= "000100" and opcode /= "000010") then RegWrite <= '1'; else RegWrite <= '0'; end if;
 
 		
 		case opcode is
-			when "100011" | "101011" | "001000" => ALUOp <= "00"; -- LW 0x23 or SW 0x2B or ANDI
+			when "100011" | "101011" | "001000" => ALUOp <= "00"; -- LW 0x23 or SW 0x2B or ADDI
 			when "000100" | "000101" => ALUOp <= "01"; -- BEQ 0X04 or BNE 0X05
 			when "000000" => ALUOp <= "10"; -- R 0x00
 			when others => ALUOp <= (others	=>	'X');	

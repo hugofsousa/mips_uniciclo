@@ -1,6 +1,6 @@
 Assembler report for uniciclo
-Tue Feb 07 17:56:36 2017
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Tue Feb 07 17:43:13 2017
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Cristiane/Desktop/mips_uniciclo/output_files/uniciclo.sof
-  6. Assembler Device Options: C:/Users/Cristiane/Desktop/mips_uniciclo/output_files/uniciclo.pof
+  5. Assembler Device Options: C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/output_files/uniciclo.sof
+  6. Assembler Device Options: C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/output_files/uniciclo.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Feb 07 17:56:36 2017 ;
+; Assembler Status      ; Successful - Tue Feb 07 17:43:13 2017 ;
 ; Revision Name         ; uniciclo                              ;
 ; Top-level Entity Name ; uniciclo                              ;
 ; Family                ; Cyclone II                            ;
@@ -78,53 +78,53 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+--------------------------------------------------------------------+
-; Assembler Generated Files                                          ;
-+--------------------------------------------------------------------+
-; File Name                                                          ;
-+--------------------------------------------------------------------+
-; C:/Users/Cristiane/Desktop/mips_uniciclo/output_files/uniciclo.sof ;
-; C:/Users/Cristiane/Desktop/mips_uniciclo/output_files/uniciclo.pof ;
-+--------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Assembler Generated Files                                                 ;
++---------------------------------------------------------------------------+
+; File Name                                                                 ;
++---------------------------------------------------------------------------+
+; C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/output_files/uniciclo.sof ;
+; C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/output_files/uniciclo.pof ;
++---------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Cristiane/Desktop/mips_uniciclo/output_files/uniciclo.sof ;
-+----------------+-----------------------------------------------------------------------------+
-; Option         ; Setting                                                                     ;
-+----------------+-----------------------------------------------------------------------------+
-; Device         ; EP2C70F896C6                                                                ;
-; JTAG usercode  ; 0x00636C7F                                                                  ;
-; Checksum       ; 0x00636C7F                                                                  ;
-+----------------+-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/output_files/uniciclo.sof ;
++----------------+------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                            ;
++----------------+------------------------------------------------------------------------------------+
+; Device         ; EP2C70F896C6                                                                       ;
+; JTAG usercode  ; 0x00849770                                                                         ;
+; Checksum       ; 0x00849770                                                                         ;
++----------------+------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Cristiane/Desktop/mips_uniciclo/output_files/uniciclo.pof ;
-+--------------------+-------------------------------------------------------------------------+
-; Option             ; Setting                                                                 ;
-+--------------------+-------------------------------------------------------------------------+
-; Device             ; EPCS16                                                                  ;
-; JTAG usercode      ; 0x00000000                                                              ;
-; Checksum           ; 0x1877E4DE                                                              ;
-; Compression Ratio  ; 3                                                                       ;
-+--------------------+-------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/output_files/uniciclo.pof ;
++--------------------+--------------------------------------------------------------------------------+
+; Option             ; Setting                                                                        ;
++--------------------+--------------------------------------------------------------------------------+
+; Device             ; EPCS16                                                                         ;
+; JTAG usercode      ; 0x00000000                                                                     ;
+; Checksum           ; 0x183E825C                                                                     ;
+; Compression Ratio  ; 3                                                                              ;
++--------------------+--------------------------------------------------------------------------------+
 
 
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Assembler
-    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue Feb 07 17:56:26 2017
+Info: Running Quartus II 32-bit Assembler
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Feb 07 17:43:07 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off uniciclo -c uniciclo
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
-Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 469 megabytes
-    Info: Processing ended: Tue Feb 07 17:56:36 2017
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:09
+Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 351 megabytes
+    Info: Processing ended: Tue Feb 07 17:43:13 2017
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 

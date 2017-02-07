@@ -8,7 +8,7 @@ package	mips_pkg	is
 		generic	(	WSIZE	:	natural	:=	32);
 		port(
 			ALUSrc : in std_logic;
-			rs,rt, rd : in std_logic_vector(4 downto 0);
+			rs,rt, rd, shamt : in std_logic_vector(4 downto 0);
 			we, clk : in std_logic;
 			din, func_32 : in std_logic_vector(31 downto 0);
 			func : in std_logic_vector(5 downto 0);
@@ -23,6 +23,7 @@ package	mips_pkg	is
 		generic	(	WSIZE	:	natural	:=	32);
 		port	(	
 			ulop :	in	std_logic_vector(3	downto	0);
+			shamt : in std_LOGIC_VECTOR(4 downto 0);
 			A,	B :	in	std_logic_vector(WSIZE-1	downto	0);	
 			aluout:	out	std_logic_vector(WSIZE-1	downto	0);	
 			zero :	out	std_logic	
@@ -32,6 +33,7 @@ package	mips_pkg	is
 	component	c_ula	is
 		port	(
 			func	 :	in	std_logic_vector(5	downto	0);
+			shamt : in	std_logic_vector(4	downto	0);
 			opUla :	in	std_logic_vector(1	downto	0);
 			ctrula	 :	out	std_logic_vector(3	downto	0)
 			);
@@ -57,7 +59,6 @@ package	mips_pkg	is
 	component somador is 
 		generic	(	WSIZE	:	natural	:=	32);
 		port(
-			clk : in std_logic;
 			A, B : in std_logic_vector ((WSIZE - 1) downto 0);
 
 			result : out std_logic_vector ((WSIZE - 1) downto 0)
@@ -67,7 +68,7 @@ package	mips_pkg	is
 	component pc is
 		generic	(	WSIZE	:	natural	:=	32);
 		port(
-			clk : in std_logic;
+			clk, reset : in std_logic;
 			address_in : in std_logic_vector ((WSIZE - 1) downto 0);
 
 			address_out : out std_logic_vector ((WSIZE - 1) downto 0)
