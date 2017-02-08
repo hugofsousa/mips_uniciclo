@@ -26,30 +26,28 @@ begin
 	when "01" =>
 	c4 <= "0110";
 	when "10" =>
-	if(func = "000000" and shamt = "00000")
+	if(func = "000000" and shamt = "00000")	--add
 		then c4 <= "0010";
-	elsif(func = "000010") 
-		then c4 <= "0110";
-	elsif(func = "000100") 
+	elsif(func = "000100")			--and 
 		then c4 <= "0000";
-	--elsif(func = "000101")
-	--	then c4 <= "0001";
-	elsif(func = "001010")
+	elsif(func = "001010")			--slt
 		then c4 <= "0111";
-	elsif(func = "100111")
+	elsif(func = "100111")			--nor
 		then c4 <= "1100";
-	elsif(func = "100101")
+	elsif(func = "100101")			--or
 		then c4 <= "0001";
-	elsif(func = "101010")
+	elsif(func = "101010")			--slt
 		then c4 <= "0111";
+	elsif(func = "100010")			--sub
+		then c4 <= "0110";
 	end if;
 	
-	if(func = "000000" and shamt /= "00000")
-	then c4 <= "0011";
+	if(func = "000000" and shamt /= "00000") --slt
+		then c4 <= "0011";
 	end if;
 	
-	if(func = "000010" and shamt /= "00000")
-	then c4 <= "0100";
+	if(func = "000010" and shamt /= "00000")	--srl
+		then c4 <= "0100";
 	end if;
 	
 	when others =>

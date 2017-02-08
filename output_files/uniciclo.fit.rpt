@@ -1,6 +1,6 @@
 Fitter report for uniciclo
-Tue Feb 07 17:43:05 2017
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Wed Feb 08 14:05:27 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -36,10 +36,8 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  28. LAB Distinct Inputs
  29. Fitter Device Options
  30. Operating Settings and Conditions
- 31. Estimated Delay Added for Hold Timing Summary
- 32. Estimated Delay Added for Hold Timing Details
- 33. Fitter Messages
- 34. Fitter Suppressed Messages
+ 31. Fitter Messages
+ 32. Fitter Suppressed Messages
 
 
 
@@ -62,26 +60,26 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Fitter Summary                                                                       ;
-+------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Tue Feb 07 17:43:05 2017           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; uniciclo                                        ;
-; Top-level Entity Name              ; uniciclo                                        ;
-; Family                             ; Cyclone II                                      ;
-; Device                             ; EP2C70F896C6                                    ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 2,781 / 68,416 ( 4 % )                          ;
-;     Total combinational functions  ; 2,264 / 68,416 ( 3 % )                          ;
-;     Dedicated logic registers      ; 1,032 / 68,416 ( 2 % )                          ;
-; Total registers                    ; 1032                                            ;
-; Total pins                         ; 59 / 622 ( 9 % )                                ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 16,384 / 1,152,000 ( 1 % )                      ;
-; Embedded Multiplier 9-bit elements ; 0 / 300 ( 0 % )                                 ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Fitter Summary                                                                  ;
++------------------------------------+--------------------------------------------+
+; Fitter Status                      ; Successful - Wed Feb 08 14:05:27 2017      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; uniciclo                                   ;
+; Top-level Entity Name              ; uniciclo                                   ;
+; Family                             ; Cyclone II                                 ;
+; Device                             ; EP2C70F896C6                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 2,778 / 68,416 ( 4 % )                     ;
+;     Total combinational functions  ; 2,264 / 68,416 ( 3 % )                     ;
+;     Dedicated logic registers      ; 1,032 / 68,416 ( 2 % )                     ;
+; Total registers                    ; 1032                                       ;
+; Total pins                         ; 59 / 622 ( 9 % )                           ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 16,384 / 1,152,000 ( 1 % )                 ;
+; Embedded Multiplier 9-bit elements ; 0 / 300 ( 0 % )                            ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -140,7 +138,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 2      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -183,7 +181,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/output_files/uniciclo.pin.
+The pin-out file can be found in C:/Users/Cristiane/Desktop/mips_uniciclo/output_files/uniciclo.pin.
 
 
 +--------------------------------------------------------------------------+
@@ -191,16 +189,16 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 +---------------------------------------------+----------------------------+
 ; Resource                                    ; Usage                      ;
 +---------------------------------------------+----------------------------+
-; Total logic elements                        ; 2,781 / 68,416 ( 4 % )     ;
-;     -- Combinational with no register       ; 1749                       ;
-;     -- Register only                        ; 517                        ;
-;     -- Combinational with a register        ; 515                        ;
+; Total logic elements                        ; 2,778 / 68,416 ( 4 % )     ;
+;     -- Combinational with no register       ; 1746                       ;
+;     -- Register only                        ; 514                        ;
+;     -- Combinational with a register        ; 518                        ;
 ;                                             ;                            ;
 ; Logic element usage by number of LUT inputs ;                            ;
 ;     -- 4 input functions                    ; 1959                       ;
 ;     -- 3 input functions                    ; 225                        ;
 ;     -- <=2 input functions                  ; 80                         ;
-;     -- Register only                        ; 517                        ;
+;     -- Register only                        ; 514                        ;
 ;                                             ;                            ;
 ; Logic elements by mode                      ;                            ;
 ;     -- normal mode                          ; 2188                       ;
@@ -210,7 +208,7 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ;     -- Dedicated logic registers            ; 1,032 / 68,416 ( 2 % )     ;
 ;     -- I/O registers                        ; 0 / 1,818 ( 0 % )          ;
 ;                                             ;                            ;
-; Total LABs:  partially or completely used   ; 204 / 4,276 ( 5 % )        ;
+; Total LABs:  partially or completely used   ; 214 / 4,276 ( 5 % )        ;
 ; Virtual pins                                ; 0                          ;
 ; I/O pins                                    ; 59 / 622 ( 9 % )           ;
 ;     -- Clock pins                           ; 2 / 8 ( 25 % )             ;
@@ -226,11 +224,11 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )              ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )              ;
 ; Average interconnect usage (total/H/V)      ; 3% / 3% / 3%               ;
-; Peak interconnect usage (total/H/V)         ; 26% / 26% / 27%            ;
+; Peak interconnect usage (total/H/V)         ; 48% / 47% / 50%            ;
 ; Maximum fan-out                             ; 2376                       ;
 ; Highest non-global fan-out                  ; 242                        ;
-; Total fan-out                               ; 11490                      ;
-; Average fan-out                             ; 3.10                       ;
+; Total fan-out                               ; 11473                      ;
+; Average fan-out                             ; 3.11                       ;
 +---------------------------------------------+----------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -243,16 +241,16 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 2781 / 68416 ( 4 % ) ; 0 / 68416 ( 0 % )              ;
-;     -- Combinational with no register       ; 1749                 ; 0                              ;
-;     -- Register only                        ; 517                  ; 0                              ;
-;     -- Combinational with a register        ; 515                  ; 0                              ;
+; Total logic elements                        ; 2778 / 68416 ( 4 % ) ; 0 / 68416 ( 0 % )              ;
+;     -- Combinational with no register       ; 1746                 ; 0                              ;
+;     -- Register only                        ; 514                  ; 0                              ;
+;     -- Combinational with a register        ; 518                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
 ;     -- 4 input functions                    ; 1959                 ; 0                              ;
 ;     -- 3 input functions                    ; 225                  ; 0                              ;
 ;     -- <=2 input functions                  ; 80                   ; 0                              ;
-;     -- Register only                        ; 517                  ; 0                              ;
+;     -- Register only                        ; 514                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
 ;     -- normal mode                          ; 2188                 ; 0                              ;
@@ -261,7 +259,7 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; Total registers                             ; 1032                 ; 0                              ;
 ;     -- Dedicated logic registers            ; 1032 / 68416 ( 2 % ) ; 0 / 68416 ( 0 % )              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 204 / 4276 ( 5 % )   ; 0 / 4276 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 214 / 4276 ( 5 % )   ; 0 / 4276 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 59                   ; 0                              ;
@@ -278,7 +276,7 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 12264                ; 0                              ;
+;     -- Total Connections                    ; 12247                ; 0                              ;
 ;     -- Registered Connections               ; 2080                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -322,62 +320,62 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; display0[0] ; E15   ; 3        ; 44           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display0[1] ; AG14  ; 8        ; 40           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display0[2] ; AK12  ; 8        ; 38           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display0[3] ; AE15  ; 8        ; 42           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display0[4] ; U8    ; 1        ; 0            ; 21           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display0[5] ; H16   ; 4        ; 49           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display0[6] ; AF14  ; 8        ; 42           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display1[0] ; AJ12  ; 8        ; 38           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display1[1] ; AD13  ; 8        ; 33           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display1[2] ; AD14  ; 8        ; 38           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display1[3] ; AC13  ; 8        ; 33           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display1[4] ; AB13  ; 8        ; 35           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display1[5] ; AH12  ; 8        ; 35           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display1[6] ; AG12  ; 8        ; 35           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display2[0] ; U5    ; 1        ; 0            ; 23           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display2[1] ; T4    ; 1        ; 0            ; 24           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display2[2] ; T7    ; 1        ; 0            ; 24           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display2[3] ; U2    ; 1        ; 0            ; 23           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display2[4] ; T5    ; 1        ; 0            ; 24           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display2[5] ; T6    ; 1        ; 0            ; 24           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display2[6] ; U1    ; 1        ; 0            ; 23           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display3[0] ; AE13  ; 8        ; 33           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display3[1] ; AF12  ; 8        ; 29           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display3[2] ; AK11  ; 8        ; 31           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display3[3] ; AB12  ; 8        ; 31           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display3[4] ; AJ9   ; 8        ; 29           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display3[5] ; AJ10  ; 8        ; 29           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display3[6] ; AJ11  ; 8        ; 31           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display4[0] ; AC16  ; 7        ; 53           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display4[1] ; AD16  ; 7        ; 53           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display4[2] ; T29   ; 6        ; 95           ; 24           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display4[3] ; AG17  ; 7        ; 56           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display4[4] ; AF16  ; 7        ; 56           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display4[5] ; AG16  ; 7        ; 53           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display4[6] ; AH17  ; 7        ; 56           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display5[0] ; C12   ; 3        ; 31           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display5[1] ; F13   ; 3        ; 33           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display5[2] ; G13   ; 3        ; 31           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display5[3] ; D12   ; 3        ; 31           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display5[4] ; A12   ; 3        ; 35           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display5[5] ; E13   ; 3        ; 33           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display5[6] ; G14   ; 3        ; 35           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display6[0] ; C14   ; 3        ; 38           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display6[1] ; C15   ; 3        ; 44           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display6[2] ; B14   ; 3        ; 42           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display6[3] ; B15   ; 3        ; 44           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display6[4] ; A14   ; 3        ; 42           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display6[5] ; E14   ; 3        ; 40           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display6[6] ; D15   ; 3        ; 42           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display7[0] ; C13   ; 3        ; 40           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display7[1] ; J13   ; 3        ; 33           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display7[2] ; AC14  ; 8        ; 40           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display7[3] ; D14   ; 3        ; 40           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display7[4] ; B13   ; 3        ; 38           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display7[5] ; H14   ; 3        ; 38           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; display7[6] ; B12   ; 3        ; 35           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display0[0] ; AJ12  ; 8        ; 38           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display0[1] ; AD13  ; 8        ; 33           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display0[2] ; AB13  ; 8        ; 35           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display0[3] ; AK12  ; 8        ; 38           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display0[4] ; AG12  ; 8        ; 35           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display0[5] ; AC13  ; 8        ; 33           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display0[6] ; AH12  ; 8        ; 35           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display1[0] ; U1    ; 1        ; 0            ; 23           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display1[1] ; T4    ; 1        ; 0            ; 24           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display1[2] ; T6    ; 1        ; 0            ; 24           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display1[3] ; U2    ; 1        ; 0            ; 23           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display1[4] ; T5    ; 1        ; 0            ; 24           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display1[5] ; U5    ; 1        ; 0            ; 23           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display1[6] ; T7    ; 1        ; 0            ; 24           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display2[0] ; P7    ; 2        ; 0            ; 32           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display2[1] ; N2    ; 2        ; 0            ; 32           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display2[2] ; N3    ; 2        ; 0            ; 32           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display2[3] ; N8    ; 2        ; 0            ; 35           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display2[4] ; P3    ; 2        ; 0            ; 31           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display2[5] ; P6    ; 2        ; 0            ; 31           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display2[6] ; L2    ; 2        ; 0            ; 34           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display3[0] ; E14   ; 3        ; 40           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display3[1] ; AF15  ; 8        ; 42           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display3[2] ; AE15  ; 8        ; 42           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display3[3] ; AK14  ; 8        ; 44           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display3[4] ; D14   ; 3        ; 40           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display3[5] ; AC14  ; 8        ; 40           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display3[6] ; AD14  ; 8        ; 38           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display4[0] ; AF14  ; 8        ; 42           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display4[1] ; AH13  ; 8        ; 44           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display4[2] ; AG13  ; 8        ; 40           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display4[3] ; AG14  ; 8        ; 40           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display4[4] ; AJ13  ; 8        ; 44           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display4[5] ; A14   ; 3        ; 42           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display4[6] ; T8    ; 1        ; 0            ; 22           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display5[0] ; B12   ; 3        ; 35           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display5[1] ; G14   ; 3        ; 35           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display5[2] ; B13   ; 3        ; 38           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display5[3] ; F13   ; 3        ; 33           ; 51           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display5[4] ; E13   ; 3        ; 33           ; 51           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display5[5] ; A12   ; 3        ; 35           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display5[6] ; J13   ; 3        ; 33           ; 51           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display6[0] ; M4    ; 2        ; 0            ; 33           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display6[1] ; M3    ; 2        ; 0            ; 33           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display6[2] ; P9    ; 2        ; 0            ; 34           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display6[3] ; L1    ; 2        ; 0            ; 34           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display6[4] ; M1    ; 2        ; 0            ; 33           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display6[5] ; N9    ; 2        ; 0            ; 34           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display6[6] ; M2    ; 2        ; 0            ; 33           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display7[0] ; AJ9   ; 8        ; 29           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display7[1] ; AK10  ; 8        ; 29           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display7[2] ; AK11  ; 8        ; 31           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display7[3] ; AF12  ; 8        ; 29           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display7[4] ; AB12  ; 8        ; 31           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display7[5] ; AJ11  ; 8        ; 31           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; display7[6] ; AJ10  ; 8        ; 29           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
@@ -387,13 +385,13 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
 ; 1        ; 10 / 85 ( 12 % ) ; 3.3V          ; --           ;
-; 2        ; 3 / 79 ( 4 % )   ; 3.3V          ; --           ;
-; 3        ; 21 / 72 ( 29 % ) ; 3.3V          ; --           ;
-; 4        ; 1 / 74 ( 1 % )   ; 3.3V          ; --           ;
+; 2        ; 17 / 79 ( 22 % ) ; 3.3V          ; --           ;
+; 3        ; 10 / 72 ( 14 % ) ; 3.3V          ; --           ;
+; 4        ; 0 / 74 ( 0 % )   ; 3.3V          ; --           ;
 ; 5        ; 0 / 85 ( 0 % )   ; 3.3V          ; --           ;
-; 6        ; 2 / 81 ( 2 % )   ; 3.3V          ; --           ;
-; 7        ; 6 / 74 ( 8 % )   ; 3.3V          ; --           ;
-; 8        ; 19 / 72 ( 26 % ) ; 3.3V          ; --           ;
+; 6        ; 1 / 81 ( 1 % )   ; 3.3V          ; --           ;
+; 7        ; 0 / 74 ( 0 % )   ; 3.3V          ; --           ;
+; 8        ; 24 / 72 ( 33 % ) ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -412,9 +410,9 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; A9       ; 594        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A10      ; 592        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A11      ; 586        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A12      ; 578        ; 3        ; display5[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A12      ; 578        ; 3        ; display5[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; A14      ; 569        ; 3        ; display6[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A14      ; 569        ; 3        ; display4[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A15      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A16      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A17      ; 549        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -471,8 +469,8 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; AB9      ;            ;          ; VCCD_PLL1                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; AB10     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB11     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; AB12     ; 218        ; 8        ; display3[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AB13     ; 224        ; 8        ; display1[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB12     ; 218        ; 8        ; display7[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB13     ; 224        ; 8        ; display0[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AB14     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB15     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB16     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -502,10 +500,10 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; AC10     ;            ;          ; GNDA_PLL1                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AC11     ; 196        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC12     ; 201        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AC13     ; 223        ; 8        ; display1[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AC14     ; 231        ; 8        ; display7[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AC13     ; 223        ; 8        ; display0[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AC14     ; 231        ; 8        ; display3[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AC15     ; 245        ; 7        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; AC16     ; 250        ; 7        ; display4[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AC16     ; 250        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC17     ; 259        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC18     ; 272        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC19     ; 282        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -532,10 +530,10 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; AD10     ; 197        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD11     ; 202        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD12     ; 210        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AD13     ; 222        ; 8        ; display1[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AD14     ; 229        ; 8        ; display1[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AD13     ; 222        ; 8        ; display0[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AD14     ; 229        ; 8        ; display3[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AD15     ; 244        ; 7        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; AD16     ; 249        ; 7        ; display4[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AD16     ; 249        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD17     ; 258        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD18     ; 271        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD19     ; 281        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -562,9 +560,9 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; AE10     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AE11     ; 204        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE12     ; 209        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AE13     ; 221        ; 8        ; display3[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE13     ; 221        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE14     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AE15     ; 235        ; 8        ; display0[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE15     ; 235        ; 8        ; display3[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AE16     ; 248        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE17     ; 255        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE18     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -591,11 +589,11 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; AF9      ; 192        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AF10     ; 200        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF11     ; 203        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AF12     ; 217        ; 8        ; display3[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF12     ; 217        ; 8        ; display7[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AF13     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; AF14     ; 233        ; 8        ; display0[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AF15     ; 234        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AF16     ; 252        ; 7        ; display4[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF14     ; 233        ; 8        ; display4[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF15     ; 234        ; 8        ; display3[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF16     ; 252        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF17     ; 264        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AF18     ; 269        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF19     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -621,12 +619,12 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; AG9      ; 208        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG10     ; 212        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG11     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AG12     ; 226        ; 8        ; display1[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AG13     ; 230        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; AG14     ; 232        ; 8        ; display0[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AG12     ; 226        ; 8        ; display0[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AG13     ; 230        ; 8        ; display4[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AG14     ; 232        ; 8        ; display4[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AG15     ; 242        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; AG16     ; 251        ; 7        ; display4[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AG17     ; 254        ; 7        ; display4[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AG16     ; 251        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; AG17     ; 254        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG18     ; 270        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG19     ; 268        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AG20     ; 275        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -651,12 +649,12 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; AH9      ; 207        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AH10     ; 211        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AH11     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; AH12     ; 225        ; 8        ; display1[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AH13     ; 237        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AH12     ; 225        ; 8        ; display0[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AH13     ; 237        ; 8        ; display4[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AH14     ; 243        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AH15     ; 241        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AH16     ; 247        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AH17     ; 253        ; 7        ; display4[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AH17     ; 253        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AH18     ; 261        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AH19     ; 267        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AH20     ; 283        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -678,11 +676,11 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; AJ6      ; 194        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AJ7      ; 199        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AJ8      ; 206        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AJ9      ; 214        ; 8        ; display3[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AJ10     ; 216        ; 8        ; display3[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AJ11     ; 220        ; 8        ; display3[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AJ12     ; 228        ; 8        ; display1[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AJ13     ; 236        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AJ9      ; 214        ; 8        ; display7[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AJ10     ; 216        ; 8        ; display7[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AJ11     ; 220        ; 8        ; display7[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AJ12     ; 228        ; 8        ; display0[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AJ13     ; 236        ; 8        ; display4[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AJ14     ; 239        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AJ15     ; 240        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AJ16     ; 246        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -708,11 +706,11 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; AK7      ; 198        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AK8      ; 205        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AK9      ; 213        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AK10     ; 215        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AK11     ; 219        ; 8        ; display3[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AK12     ; 227        ; 8        ; display0[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AK10     ; 215        ; 8        ; display7[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AK11     ; 219        ; 8        ; display7[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AK12     ; 227        ; 8        ; display0[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AK13     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AK14     ; 238        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AK14     ; 238        ; 8        ; display3[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; AK15     ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AK16     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AK17     ; 256        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -739,10 +737,10 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; B9       ; 593        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B10      ; 591        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B11      ; 585        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B12      ; 577        ; 3        ; display7[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; B13      ; 573        ; 3        ; display7[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; B14      ; 568        ; 3        ; display6[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; B15      ; 565        ; 3        ; display6[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 577        ; 3        ; display5[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B13      ; 573        ; 3        ; display5[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; B14      ; 568        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B15      ; 565        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B16      ; 559        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B17      ; 548        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B18      ; 547        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -769,10 +767,10 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; C9       ; 603        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C10      ; 600        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C11      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; C12      ; 584        ; 3        ; display5[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; C13      ; 572        ; 3        ; display7[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; C14      ; 575        ; 3        ; display6[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; C15      ; 564        ; 3        ; display6[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C12      ; 584        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; C13      ; 572        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; C14      ; 575        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; C15      ; 564        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C16      ; 558        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C17      ; 554        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C18      ; 546        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -799,10 +797,10 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; D9       ; 604        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D10      ; 599        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D11      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; D12      ; 583        ; 3        ; display5[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D12      ; 583        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D13      ; 588        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; D14      ; 571        ; 3        ; display7[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; D15      ; 567        ; 3        ; display6[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D14      ; 571        ; 3        ; display3[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D15      ; 567        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D16      ; 561        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D17      ; 553        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D18      ; 541        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -830,9 +828,9 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; E10      ; 607        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E11      ; 596        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E12      ; 589        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; E13      ; 579        ; 3        ; display5[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; E14      ; 570        ; 3        ; display6[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; E15      ; 566        ; 3        ; display0[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E13      ; 579        ; 3        ; display5[4]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E14      ; 570        ; 3        ; display3[0]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; E15      ; 566        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E16      ; 560        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; E17      ; 550        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E18      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -860,7 +858,7 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; F10      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; F11      ; 595        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F12      ; 590        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F13      ; 580        ; 3        ; display5[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; F13      ; 580        ; 3        ; display5[3]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; F14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F15      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; F16      ; 556        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -890,8 +888,8 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; G10      ; 623        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G11      ; 610        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G12      ; 597        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G13      ; 582        ; 3        ; display5[2]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; G14      ; 576        ; 3        ; display5[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G13      ; 582        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G14      ; 576        ; 3        ; display5[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; G15      ; 562        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; G16      ; 555        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G17      ; 551        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -921,9 +919,9 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; H11      ; 602        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H12      ; 598        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H13      ; 587        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; H14      ; 574        ; 3        ; display7[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; H14      ; 574        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H15      ; 563        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; H16      ; 557        ; 4        ; display0[5]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; H16      ; 557        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H17      ; 552        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H18      ; 535        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H19      ; 524        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -950,7 +948,7 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; J10      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J11      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J12      ; 601        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J13      ; 581        ; 3        ; display7[1]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; J13      ; 581        ; 3        ; display5[6]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J15      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J16      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -998,8 +996,8 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; K28      ; 446        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K29      ; 433        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K30      ; 434        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; L1       ; 60         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; L2       ; 61         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; L1       ; 60         ; 2        ; display6[3]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L2       ; 61         ; 2        ; display2[6]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; L3       ; 54         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L4       ; 55         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L5       ; 34         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1028,10 +1026,10 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; L28      ; 435        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L29      ; 431        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L30      ; 432        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; M1       ; 64         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; M2       ; 65         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; M3       ; 66         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; M4       ; 67         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; M1       ; 64         ; 2        ; display6[4]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M2       ; 65         ; 2        ; display6[6]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M3       ; 66         ; 2        ; display6[1]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M4       ; 67         ; 2        ; display6[0]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M5       ; 53         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; M6       ; 49         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; M7       ; 50         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1059,14 +1057,14 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; M29      ; 425        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; M30      ; 426        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N1       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; N2       ; 68         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; N3       ; 69         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; N2       ; 68         ; 2        ; display2[1]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N3       ; 69         ; 2        ; display2[2]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; N4       ; 71         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; N5       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; N6       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N7       ; 59         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; N8       ; 58         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; N9       ; 63         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; N8       ; 58         ; 2        ; display2[3]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N9       ; 63         ; 2        ; display6[5]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; N10      ; 47         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N12      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1090,13 +1088,13 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; N30      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P1       ; 75         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P2       ; 76         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; P3       ; 73         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; P3       ; 73         ; 2        ; display2[4]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P4       ; 74         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P5       ; 78         ; 2        ; #TCK                                     ; input  ;              ;         ; --         ;                 ; --       ; --           ;
-; P6       ; 72         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; P7       ; 70         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; P6       ; 72         ; 2        ; display2[5]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P7       ; 70         ; 2        ; display2[0]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P8       ; 77         ; 2        ; #TDI                                     ; input  ;              ;         ; --         ;                 ; --       ; --           ;
-; P9       ; 62         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; P9       ; 62         ; 2        ; display6[2]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P10      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; P12      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1151,11 +1149,11 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; T1       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; T2       ; 87         ; 1        ; clk                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T3       ; 88         ; 1        ; clk_mem                                  ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T4       ; 91         ; 1        ; display2[1]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T5       ; 92         ; 1        ; display2[4]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T6       ; 89         ; 1        ; display2[5]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T7       ; 90         ; 1        ; display2[2]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T8       ; 97         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; T4       ; 91         ; 1        ; display1[1]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T5       ; 92         ; 1        ; display1[4]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T6       ; 89         ; 1        ; display1[2]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T7       ; 90         ; 1        ; display1[6]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T8       ; 97         ; 1        ; display4[6]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T9       ; 96         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T10      ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; T11      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1176,16 +1174,16 @@ The pin-out file can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo
 ; T26      ; 400        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T27      ; 399        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T28      ; 397        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; T29      ; 398        ; 6        ; display4[2]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T29      ; 398        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; T30      ;            ; 6        ; VCCIO6                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; U1       ; 93         ; 1        ; display2[6]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; U2       ; 94         ; 1        ; display2[3]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U1       ; 93         ; 1        ; display1[0]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U2       ; 94         ; 1        ; display1[3]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; U3       ; 102        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U4       ; 103        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; U5       ; 95         ; 1        ; display2[0]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U5       ; 95         ; 1        ; display1[5]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; U6       ; 100        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U7       ; 101        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; U8       ; 99         ; 1        ; display0[4]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; U8       ; 99         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U9       ; 98         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U10      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; U11      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1344,24 +1342,24 @@ Note: User assignments will override these defaults. The user specified values a
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                            ; Library Name ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------+--------------+
-; |uniciclo                                 ; 2781 (56)   ; 1032 (0)                  ; 0 (0)         ; 16384       ; 5    ; 0            ; 0       ; 0         ; 59   ; 0            ; 1749 (56)    ; 517 (0)           ; 515 (0)          ; |uniciclo                                                                                      ; work         ;
-;    |breg_ula:bregula|                     ; 2645 (0)    ; 1024 (0)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1621 (0)     ; 509 (0)           ; 515 (0)          ; |uniciclo|breg_ula:bregula                                                                     ; work         ;
-;       |breg:breg|                         ; 1958 (1958) ; 1024 (1024)               ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 934 (934)    ; 509 (509)         ; 515 (515)        ; |uniciclo|breg_ula:bregula|breg:breg                                                           ; work         ;
-;       |c_ula:c_ula|                       ; 33 (33)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (32)      ; 0 (0)             ; 1 (1)            ; |uniciclo|breg_ula:bregula|c_ula:c_ula                                                         ; work         ;
-;       |multiplexador_32_bits:mux|         ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (32)      ; 0 (0)             ; 0 (0)            ; |uniciclo|breg_ula:bregula|multiplexador_32_bits:mux                                           ; work         ;
-;       |ula:ula|                           ; 629 (629)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 623 (623)    ; 0 (0)             ; 6 (6)            ; |uniciclo|breg_ula:bregula|ula:ula                                                             ; work         ;
-;    |control:ctrl|                         ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; |uniciclo|control:ctrl                                                                         ; work         ;
-;    |data_memory:md|                       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|data_memory:md                                                                       ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|data_memory:md|altsyncram:altsyncram_component                                       ; work         ;
-;          |altsyncram_lnc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated        ; work         ;
-;    |memory_instruction:mi|                ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|memory_instruction:mi                                                                ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|memory_instruction:mi|altsyncram:altsyncram_component                                ; work         ;
-;          |altsyncram_qd81:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated ; work         ;
-;    |multiplexador_32_bits:mux2|           ; 33 (33)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 12 (12)          ; |uniciclo|multiplexador_32_bits:mux2                                                           ; work         ;
-;    |multiplexador_5_bits:mux1|            ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; |uniciclo|multiplexador_5_bits:mux1                                                            ; work         ;
-;    |pc:PC_P|                              ; 32 (32)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 23 (23)      ; 8 (8)             ; 1 (1)            ; |uniciclo|pc:PC_P                                                                              ; work         ;
-;    |somador:s1|                           ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |uniciclo|somador:s1                                                                           ; work         ;
-;    |somador:s2|                           ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |uniciclo|somador:s2                                                                           ; work         ;
+; |uniciclo                                 ; 2778 (56)   ; 1032 (0)                  ; 0 (0)         ; 16384       ; 5    ; 0            ; 0       ; 0         ; 59   ; 0            ; 1746 (56)    ; 514 (0)           ; 518 (0)          ; |uniciclo                                                                                      ;              ;
+;    |breg_ula:bregula|                     ; 2642 (0)    ; 1024 (0)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1618 (0)     ; 506 (0)           ; 518 (0)          ; |uniciclo|breg_ula:bregula                                                                     ;              ;
+;       |breg:breg|                         ; 1962 (1962) ; 1024 (1024)               ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 938 (938)    ; 506 (506)         ; 518 (518)        ; |uniciclo|breg_ula:bregula|breg:breg                                                           ;              ;
+;       |c_ula:c_ula|                       ; 33 (33)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (32)      ; 0 (0)             ; 1 (1)            ; |uniciclo|breg_ula:bregula|c_ula:c_ula                                                         ;              ;
+;       |multiplexador_32_bits:mux|         ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (32)      ; 0 (0)             ; 0 (0)            ; |uniciclo|breg_ula:bregula|multiplexador_32_bits:mux                                           ;              ;
+;       |ula:ula|                           ; 629 (629)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 616 (616)    ; 0 (0)             ; 13 (13)          ; |uniciclo|breg_ula:bregula|ula:ula                                                             ;              ;
+;    |control:ctrl|                         ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 1 (1)            ; |uniciclo|control:ctrl                                                                         ;              ;
+;    |data_memory:md|                       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|data_memory:md                                                                       ;              ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|data_memory:md|altsyncram:altsyncram_component                                       ;              ;
+;          |altsyncram_lnc1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated        ;              ;
+;    |memory_instruction:mi|                ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|memory_instruction:mi                                                                ;              ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|memory_instruction:mi|altsyncram:altsyncram_component                                ;              ;
+;          |altsyncram_qd81:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 3    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated ;              ;
+;    |multiplexador_32_bits:mux2|           ; 33 (33)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 20 (20)      ; 0 (0)             ; 13 (13)          ; |uniciclo|multiplexador_32_bits:mux2                                                           ;              ;
+;    |multiplexador_5_bits:mux1|            ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |uniciclo|multiplexador_5_bits:mux1                                                            ;              ;
+;    |pc:PC_P|                              ; 32 (32)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 22 (22)      ; 8 (8)             ; 2 (2)            ; |uniciclo|pc:PC_P                                                                              ;              ;
+;    |somador:s1|                           ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |uniciclo|somador:s1                                                                           ;              ;
+;    |somador:s2|                           ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |uniciclo|somador:s2                                                                           ;              ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1449,44 +1447,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                 ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; breg_ula:bregula|breg:breg|breg~2367 ; LCCOMB_X51_Y26_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2369 ; LCCOMB_X49_Y27_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2371 ; LCCOMB_X52_Y21_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2373 ; LCCOMB_X49_Y24_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2375 ; LCCOMB_X56_Y21_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2377 ; LCCOMB_X56_Y21_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2379 ; LCCOMB_X48_Y25_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2381 ; LCCOMB_X51_Y21_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2383 ; LCCOMB_X54_Y25_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2385 ; LCCOMB_X52_Y21_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2387 ; LCCOMB_X51_Y22_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2389 ; LCCOMB_X51_Y22_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2391 ; LCCOMB_X52_Y20_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2393 ; LCCOMB_X58_Y21_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2395 ; LCCOMB_X56_Y25_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2397 ; LCCOMB_X49_Y20_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2399 ; LCCOMB_X52_Y25_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2400 ; LCCOMB_X51_Y26_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2401 ; LCCOMB_X51_Y26_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2402 ; LCCOMB_X51_Y22_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2403 ; LCCOMB_X53_Y26_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2404 ; LCCOMB_X51_Y21_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2405 ; LCCOMB_X54_Y25_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2406 ; LCCOMB_X51_Y21_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2407 ; LCCOMB_X54_Y24_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2408 ; LCCOMB_X49_Y24_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2409 ; LCCOMB_X53_Y26_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2410 ; LCCOMB_X53_Y26_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2411 ; LCCOMB_X49_Y20_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2412 ; LCCOMB_X49_Y24_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2413 ; LCCOMB_X51_Y22_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|breg:breg|breg~2414 ; LCCOMB_X49_Y24_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; breg_ula:bregula|c_ula:c_ula|Mux1~2  ; LCCOMB_X36_Y24_N6  ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2367 ; LCCOMB_X33_Y23_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2369 ; LCCOMB_X33_Y23_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2371 ; LCCOMB_X35_Y25_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2373 ; LCCOMB_X35_Y25_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2375 ; LCCOMB_X35_Y24_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2377 ; LCCOMB_X35_Y28_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2379 ; LCCOMB_X35_Y31_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2381 ; LCCOMB_X33_Y23_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2383 ; LCCOMB_X33_Y24_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2385 ; LCCOMB_X33_Y23_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2387 ; LCCOMB_X35_Y25_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2389 ; LCCOMB_X35_Y28_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2391 ; LCCOMB_X35_Y31_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2393 ; LCCOMB_X35_Y24_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2395 ; LCCOMB_X34_Y33_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2397 ; LCCOMB_X34_Y33_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2399 ; LCCOMB_X35_Y28_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2400 ; LCCOMB_X32_Y23_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2401 ; LCCOMB_X33_Y27_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2402 ; LCCOMB_X34_Y32_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2403 ; LCCOMB_X31_Y24_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2404 ; LCCOMB_X33_Y27_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2405 ; LCCOMB_X33_Y27_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2406 ; LCCOMB_X34_Y28_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2407 ; LCCOMB_X35_Y25_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2408 ; LCCOMB_X33_Y27_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2409 ; LCCOMB_X35_Y25_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2410 ; LCCOMB_X34_Y33_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2411 ; LCCOMB_X32_Y27_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2412 ; LCCOMB_X35_Y25_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2413 ; LCCOMB_X35_Y28_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|breg:breg|breg~2414 ; LCCOMB_X34_Y33_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; breg_ula:bregula|c_ula:c_ula|Mux1~2  ; LCCOMB_X36_Y35_N12 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
 ; clk                                  ; PIN_T2             ; 1032    ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
 ; clk_mem                              ; PIN_T3             ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; clk_mem                              ; PIN_T3             ; 4       ; Clock        ; yes    ; Global Clock         ; GCLK1            ; --                        ;
-; control:ctrl|Equal2~0                ; LCCOMB_X36_Y26_N22 ; 10      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; control:ctrl|Equal5~0                ; LCCOMB_X36_Y23_N6  ; 4       ; Write enable ; no     ; --                   ; --               ; --                        ;
+; control:ctrl|Equal2~0                ; LCCOMB_X41_Y28_N8  ; 10      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; control:ctrl|Equal5~0                ; LCCOMB_X35_Y35_N6  ; 4       ; Write enable ; no     ; --                   ; --               ; --                        ;
 ; reset                                ; PIN_R2             ; 8       ; Async. clear ; yes    ; Global Clock         ; GCLK2            ; --                        ;
 +--------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
@@ -2515,8 +2513,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+---------------------------------------+----------------------+-----------------+-----------------+
 ; Name                                                                                            ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF             ; Location                              ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
 +-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+---------------------------------------+----------------------+-----------------+-----------------+
-; data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|ALTSYNCRAM        ; AUTO ; Single Port ; Single Clock ; 256          ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 8192 ; 256                         ; 32                          ; --                          ; --                          ; 8192                ; 2    ; data.mif        ; M4K_X37_Y26, M4K_X37_Y25              ; Don't care           ; Don't care      ; Don't care      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; Single Clock ; 256          ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 8192 ; 256                         ; 32                          ; --                          ; --                          ; 8192                ; 3    ; instruction.mif ; M4K_X37_Y24, M4K_X55_Y25, M4K_X37_Y23 ; Don't care           ; Don't care      ; Don't care      ;
+; data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|ALTSYNCRAM        ; AUTO ; Single Port ; Single Clock ; 256          ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 8192 ; 256                         ; 32                          ; --                          ; --                          ; 8192                ; 2    ; data.mif        ; M4K_X37_Y30, M4K_X37_Y31              ; Don't care           ; Don't care      ; Don't care      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; Single Clock ; 256          ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 8192 ; 256                         ; 32                          ; --                          ; --                          ; 8192                ; 3    ; instruction.mif ; M4K_X37_Y29, M4K_X37_Y28, M4K_X37_Y27 ; Don't care           ; Don't care      ; Don't care      ;
 +-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+---------------------------------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -2526,169 +2524,177 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------+-------------------------+
 ; Other Routing Resource Type ; Usage                   ;
 +-----------------------------+-------------------------+
-; Block interconnects         ; 5,574 / 197,592 ( 3 % ) ;
-; C16 interconnects           ; 63 / 6,270 ( 1 % )      ;
-; C4 interconnects            ; 3,900 / 123,120 ( 3 % ) ;
-; Direct links                ; 350 / 197,592 ( < 1 % ) ;
+; Block interconnects         ; 5,696 / 197,592 ( 3 % ) ;
+; C16 interconnects           ; 147 / 6,270 ( 2 % )     ;
+; C4 interconnects            ; 4,395 / 123,120 ( 4 % ) ;
+; Direct links                ; 318 / 197,592 ( < 1 % ) ;
 ; Global clocks               ; 3 / 16 ( 19 % )         ;
-; Local interconnects         ; 1,499 / 68,416 ( 2 % )  ;
-; R24 interconnects           ; 183 / 5,926 ( 3 % )     ;
-; R4 interconnects            ; 5,008 / 167,484 ( 3 % ) ;
+; Local interconnects         ; 1,460 / 68,416 ( 2 % )  ;
+; R24 interconnects           ; 200 / 5,926 ( 3 % )     ;
+; R4 interconnects            ; 5,481 / 167,484 ( 3 % ) ;
 +-----------------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 13.63) ; Number of LABs  (Total = 204) ;
+; Number of Logic Elements  (Average = 12.98) ; Number of LABs  (Total = 214) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 1                             ;
-; 2                                           ; 6                             ;
-; 3                                           ; 3                             ;
-; 4                                           ; 9                             ;
-; 5                                           ; 0                             ;
-; 6                                           ; 3                             ;
-; 7                                           ; 5                             ;
+; 1                                           ; 4                             ;
+; 2                                           ; 9                             ;
+; 3                                           ; 6                             ;
+; 4                                           ; 11                            ;
+; 5                                           ; 2                             ;
+; 6                                           ; 2                             ;
+; 7                                           ; 8                             ;
 ; 8                                           ; 1                             ;
-; 9                                           ; 6                             ;
-; 10                                          ; 3                             ;
-; 11                                          ; 4                             ;
-; 12                                          ; 4                             ;
-; 13                                          ; 7                             ;
-; 14                                          ; 13                            ;
-; 15                                          ; 11                            ;
-; 16                                          ; 128                           ;
+; 9                                           ; 1                             ;
+; 10                                          ; 1                             ;
+; 11                                          ; 3                             ;
+; 12                                          ; 8                             ;
+; 13                                          ; 9                             ;
+; 14                                          ; 14                            ;
+; 15                                          ; 13                            ;
+; 16                                          ; 122                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 1.73) ; Number of LABs  (Total = 204) ;
+; LAB-wide Signals  (Average = 1.76) ; Number of LABs  (Total = 214) ;
 +------------------------------------+-------------------------------+
 ; 1 Async. clear                     ; 3                             ;
-; 1 Clock                            ; 176                           ;
-; 1 Clock enable                     ; 28                            ;
-; 1 Sync. load                       ; 3                             ;
-; 2 Clock enables                    ; 142                           ;
+; 1 Clock                            ; 190                           ;
+; 1 Clock enable                     ; 29                            ;
+; 1 Sync. load                       ; 2                             ;
+; 2 Clock enables                    ; 153                           ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 17.84) ; Number of LABs  (Total = 204) ;
+; Number of Signals Sourced  (Average = 16.93) ; Number of LABs  (Total = 214) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 0                             ;
-; 2                                            ; 4                             ;
-; 3                                            ; 2                             ;
-; 4                                            ; 3                             ;
-; 5                                            ; 2                             ;
-; 6                                            ; 8                             ;
-; 7                                            ; 5                             ;
-; 8                                            ; 1                             ;
-; 9                                            ; 2                             ;
-; 10                                           ; 1                             ;
-; 11                                           ; 2                             ;
+; 1                                            ; 3                             ;
+; 2                                            ; 2                             ;
+; 3                                            ; 6                             ;
+; 4                                            ; 7                             ;
+; 5                                            ; 5                             ;
+; 6                                            ; 7                             ;
+; 7                                            ; 7                             ;
+; 8                                            ; 4                             ;
+; 9                                            ; 1                             ;
+; 10                                           ; 0                             ;
+; 11                                           ; 1                             ;
 ; 12                                           ; 4                             ;
-; 13                                           ; 12                            ;
-; 14                                           ; 5                             ;
-; 15                                           ; 9                             ;
-; 16                                           ; 27                            ;
-; 17                                           ; 10                            ;
-; 18                                           ; 15                            ;
-; 19                                           ; 8                             ;
+; 13                                           ; 5                             ;
+; 14                                           ; 3                             ;
+; 15                                           ; 13                            ;
+; 16                                           ; 24                            ;
+; 17                                           ; 18                            ;
+; 18                                           ; 22                            ;
+; 19                                           ; 9                             ;
 ; 20                                           ; 11                            ;
-; 21                                           ; 11                            ;
-; 22                                           ; 9                             ;
-; 23                                           ; 9                             ;
-; 24                                           ; 10                            ;
-; 25                                           ; 8                             ;
-; 26                                           ; 7                             ;
-; 27                                           ; 4                             ;
-; 28                                           ; 4                             ;
-; 29                                           ; 4                             ;
-; 30                                           ; 2                             ;
-; 31                                           ; 4                             ;
-; 32                                           ; 1                             ;
+; 21                                           ; 6                             ;
+; 22                                           ; 10                            ;
+; 23                                           ; 5                             ;
+; 24                                           ; 8                             ;
+; 25                                           ; 6                             ;
+; 26                                           ; 3                             ;
+; 27                                           ; 5                             ;
+; 28                                           ; 6                             ;
+; 29                                           ; 5                             ;
+; 30                                           ; 4                             ;
+; 31                                           ; 2                             ;
+; 32                                           ; 2                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +----------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                          ;
 +--------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 11.71) ; Number of LABs  (Total = 204) ;
+; Number of Signals Sourced Out  (Average = 11.18) ; Number of LABs  (Total = 214) ;
 +--------------------------------------------------+-------------------------------+
 ; 0                                                ; 0                             ;
-; 1                                                ; 2                             ;
-; 2                                                ; 6                             ;
-; 3                                                ; 9                             ;
-; 4                                                ; 6                             ;
-; 5                                                ; 8                             ;
-; 6                                                ; 10                            ;
-; 7                                                ; 16                            ;
-; 8                                                ; 13                            ;
-; 9                                                ; 12                            ;
+; 1                                                ; 4                             ;
+; 2                                                ; 11                            ;
+; 3                                                ; 12                            ;
+; 4                                                ; 10                            ;
+; 5                                                ; 6                             ;
+; 6                                                ; 12                            ;
+; 7                                                ; 14                            ;
+; 8                                                ; 15                            ;
+; 9                                                ; 11                            ;
 ; 10                                               ; 14                            ;
-; 11                                               ; 14                            ;
-; 12                                               ; 10                            ;
-; 13                                               ; 9                             ;
-; 14                                               ; 9                             ;
+; 11                                               ; 15                            ;
+; 12                                               ; 14                            ;
+; 13                                               ; 11                            ;
+; 14                                               ; 4                             ;
 ; 15                                               ; 8                             ;
-; 16                                               ; 13                            ;
-; 17                                               ; 9                             ;
-; 18                                               ; 6                             ;
-; 19                                               ; 3                             ;
-; 20                                               ; 4                             ;
-; 21                                               ; 8                             ;
-; 22                                               ; 8                             ;
-; 23                                               ; 1                             ;
-; 24                                               ; 3                             ;
-; 25                                               ; 0                             ;
-; 26                                               ; 3                             ;
+; 16                                               ; 4                             ;
+; 17                                               ; 11                            ;
+; 18                                               ; 4                             ;
+; 19                                               ; 5                             ;
+; 20                                               ; 5                             ;
+; 21                                               ; 5                             ;
+; 22                                               ; 6                             ;
+; 23                                               ; 4                             ;
+; 24                                               ; 1                             ;
+; 25                                               ; 4                             ;
+; 26                                               ; 2                             ;
+; 27                                               ; 1                             ;
+; 28                                               ; 0                             ;
+; 29                                               ; 0                             ;
+; 30                                               ; 1                             ;
 +--------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 25.65) ; Number of LABs  (Total = 204) ;
+; Number of Distinct Inputs  (Average = 24.87) ; Number of LABs  (Total = 214) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
 ; 2                                            ; 0                             ;
-; 3                                            ; 1                             ;
-; 4                                            ; 7                             ;
+; 3                                            ; 3                             ;
+; 4                                            ; 11                            ;
 ; 5                                            ; 0                             ;
-; 6                                            ; 4                             ;
-; 7                                            ; 2                             ;
-; 8                                            ; 7                             ;
-; 9                                            ; 1                             ;
+; 6                                            ; 6                             ;
+; 7                                            ; 1                             ;
+; 8                                            ; 8                             ;
+; 9                                            ; 3                             ;
 ; 10                                           ; 2                             ;
-; 11                                           ; 3                             ;
+; 11                                           ; 4                             ;
 ; 12                                           ; 1                             ;
-; 13                                           ; 2                             ;
-; 14                                           ; 0                             ;
-; 15                                           ; 1                             ;
-; 16                                           ; 2                             ;
-; 17                                           ; 2                             ;
-; 18                                           ; 3                             ;
-; 19                                           ; 1                             ;
-; 20                                           ; 3                             ;
-; 21                                           ; 1                             ;
-; 22                                           ; 3                             ;
-; 23                                           ; 0                             ;
+; 13                                           ; 0                             ;
+; 14                                           ; 2                             ;
+; 15                                           ; 3                             ;
+; 16                                           ; 0                             ;
+; 17                                           ; 1                             ;
+; 18                                           ; 0                             ;
+; 19                                           ; 2                             ;
+; 20                                           ; 0                             ;
+; 21                                           ; 2                             ;
+; 22                                           ; 1                             ;
+; 23                                           ; 2                             ;
 ; 24                                           ; 4                             ;
-; 25                                           ; 5                             ;
-; 26                                           ; 3                             ;
-; 27                                           ; 2                             ;
-; 28                                           ; 11                            ;
-; 29                                           ; 24                            ;
-; 30                                           ; 37                            ;
-; 31                                           ; 67                            ;
-; 32                                           ; 3                             ;
-; 33                                           ; 2                             ;
+; 25                                           ; 3                             ;
+; 26                                           ; 6                             ;
+; 27                                           ; 5                             ;
+; 28                                           ; 13                            ;
+; 29                                           ; 18                            ;
+; 30                                           ; 48                            ;
+; 31                                           ; 60                            ;
+; 32                                           ; 2                             ;
+; 33                                           ; 0                             ;
+; 34                                           ; 0                             ;
+; 35                                           ; 0                             ;
+; 36                                           ; 2                             ;
+; 37                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -2719,98 +2725,6 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; Low Junction Temperature  ; 0 °C   ;
 ; High Junction Temperature ; 85 °C  ;
 +---------------------------+--------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                                                                                              ;
-+-----------------+----------------------------------------------------------------------------------------------------------------------+-------------------+
-; Source Clock(s) ; Destination Clock(s)                                                                                                 ; Delay Added in ns ;
-+-----------------+----------------------------------------------------------------------------------------------------------------------+-------------------+
-; clk_mem         ; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0 ; 15.2              ;
-+-----------------+----------------------------------------------------------------------------------------------------------------------+-------------------+
-Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
-This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                                                                  ;
-+-----------------------------------------------------------------------------------------------------------------------+------------------------------------+-------------------+
-; Source Register                                                                                                       ; Destination Register               ; Delay Added in ns ;
-+-----------------------------------------------------------------------------------------------------------------------+------------------------------------+-------------------+
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a28~porta_address_reg7 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.657             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a28~porta_address_reg6 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.657             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a28~porta_address_reg5 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.657             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a28~porta_address_reg4 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.657             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a28~porta_address_reg3 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.657             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a28~porta_address_reg2 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.657             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a28~porta_address_reg1 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.657             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a28~porta_address_reg0 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.657             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a29~porta_address_reg7 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.575             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a29~porta_address_reg6 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.575             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a29~porta_address_reg5 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.575             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a29~porta_address_reg4 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.575             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a29~porta_address_reg3 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.575             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a29~porta_address_reg2 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.575             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a29~porta_address_reg1 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.575             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a29~porta_address_reg0 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.575             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a31~porta_address_reg7 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.427             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a31~porta_address_reg6 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.427             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a31~porta_address_reg5 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.427             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a31~porta_address_reg4 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.427             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a31~porta_address_reg3 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.427             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a31~porta_address_reg2 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.427             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a31~porta_address_reg1 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.427             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a31~porta_address_reg0 ; breg_ula:bregula|c_ula:c_ula|c4[2] ; 1.427             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a1~porta_address_reg7  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a1~porta_address_reg6  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a1~porta_address_reg5  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a1~porta_address_reg4  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a1~porta_address_reg3  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a1~porta_address_reg2  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a1~porta_address_reg1  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a1~porta_address_reg0  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a3~porta_address_reg7  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a3~porta_address_reg6  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a3~porta_address_reg5  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a3~porta_address_reg4  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a3~porta_address_reg3  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a3~porta_address_reg2  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a3~porta_address_reg1  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a3~porta_address_reg0  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a5~porta_address_reg7  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a5~porta_address_reg6  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a5~porta_address_reg5  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a5~porta_address_reg4  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a5~porta_address_reg3  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a5~porta_address_reg2  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a5~porta_address_reg1  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a5~porta_address_reg0  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.925             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a2~porta_address_reg7  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.766             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a2~porta_address_reg6  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.766             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a2~porta_address_reg5  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.766             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a2~porta_address_reg4  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.766             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a2~porta_address_reg3  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.766             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a2~porta_address_reg2  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.766             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a2~porta_address_reg1  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.766             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a2~porta_address_reg0  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.766             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a4~porta_address_reg7  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.528             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a4~porta_address_reg6  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.528             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a4~porta_address_reg5  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.528             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a4~porta_address_reg4  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.528             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a4~porta_address_reg3  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.528             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a4~porta_address_reg2  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.528             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a4~porta_address_reg1  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.528             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a4~porta_address_reg0  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.528             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg7  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.422             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg6  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.422             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg5  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.422             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg4  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.422             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg3  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.422             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg2  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.422             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg1  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.422             ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0  ; breg_ula:bregula|c_ula:c_ula|c4[0] ; 0.422             ;
-+-----------------------------------------------------------------------------------------------------------------------+------------------------------------+-------------------+
-Note: This table only shows the top 72 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -2926,19 +2840,19 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  80 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  74 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  72 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:05
 Info (170189): Fitter placement preparation operations beginning
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:04
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:17
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:31
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 22% of the available device resources in the region that extends from location X36_Y13 to location X47_Y25
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:27
+    Info (170196): Router estimated peak interconnect usage is 39% of the available device resources in the region that extends from location X36_Y26 to location X47_Y38
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:54
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 9.72 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 12.19 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 56 output pins without output pin load capacitance assignment
     Info (306007): Pin "display0[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -3000,20 +2914,20 @@ Warning (306006): Found 56 output pins without output pin load capacitance assig
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:05
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:10
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/output_files/uniciclo.fit.smsg
-Info: Quartus II 32-bit Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 585 megabytes
-    Info: Processing ended: Tue Feb 07 17:43:06 2017
-    Info: Elapsed time: 00:01:05
-    Info: Total CPU time (on all processors): 00:01:05
+Info (144001): Generated suppressed messages file C:/Users/Cristiane/Desktop/mips_uniciclo/output_files/uniciclo.fit.smsg
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 885 megabytes
+    Info: Processing ended: Wed Feb 08 14:05:30 2017
+    Info: Elapsed time: 00:02:07
+    Info: Total CPU time (on all processors): 00:02:03
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/output_files/uniciclo.fit.smsg.
+The suppressed messages can be found in C:/Users/Cristiane/Desktop/mips_uniciclo/output_files/uniciclo.fit.smsg.
 
 

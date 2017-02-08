@@ -2,23 +2,23 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\TEMP.W312590.001\Desktop\mips_uniciclo\simulation\modelsim
+Z0 dC:\Users\Cristiane\Desktop\mips_uniciclo\simulation\modelsim
 Ebreg
-Z1 w1486491524
+Z1 w1486569685
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z5 dC:\Users\TEMP.W312590.001\Desktop\mips_uniciclo\simulation\modelsim
-Z6 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/breg.vhd
-Z7 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/breg.vhd
+Z5 dC:\Users\Cristiane\Desktop\mips_uniciclo\simulation\modelsim
+Z6 8C:/Users/Cristiane/Desktop/mips_uniciclo/breg.vhd
+Z7 FC:/Users/Cristiane/Desktop/mips_uniciclo/breg.vhd
 l0
 L5
 VNhOS08loU7U9Z<nX:B<<d0
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1486496615.275000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/breg.vhd|
-Z11 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/breg.vhd|
+Z9 !s108 1486570041.980000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/breg.vhd|
+Z11 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/breg.vhd|
 Z12 o-93 -work work -O0
 Z13 tExplicit 1
 !s100 I2>oBWK?_i^nGZ7nG8X;K0
@@ -41,32 +41,32 @@ R13
 !s100 zk]A]=@i?fBTEeDPQEG<H3
 !i10b 1
 Ebreg_ula
-Z15 w1486491830
-Z16 DPx4 work 8 mips_pkg 0 22 <J0MZ9c4iAz0A:HinJX_Q0
+R1
+Z15 DPx4 work 8 mips_pkg 0 22 <J0MZ9c4iAz0A:HinJX_Q0
 R2
 R3
 R4
 R5
-Z17 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/breg_ula.vhd
-Z18 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/breg_ula.vhd
+Z16 8C:/Users/Cristiane/Desktop/mips_uniciclo/breg_ula.vhd
+Z17 FC:/Users/Cristiane/Desktop/mips_uniciclo/breg_ula.vhd
 l0
 L6
 V<a390JEzmI>h8>VOWWV5;1
 R8
 31
-Z19 !s108 1486496618.906000
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/breg_ula.vhd|
-Z21 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/breg_ula.vhd|
+Z18 !s108 1486570051.200000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/breg_ula.vhd|
+Z20 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/breg_ula.vhd|
 R12
 R13
 !s100 2ChV1mWM87BcOo00Q0VTA1
 !i10b 1
 Artl
-Z22 DEx4 work 21 multiplexador_32_bits 0 22 43]_ATC>UhBHiKK?7?A3M1
-Z23 DEx4 work 5 c_ula 0 22 Z4Nj5;`EP4=ZmVYXZ<Kz22
+Z21 DEx4 work 21 multiplexador_32_bits 0 22 43]_ATC>UhBHiKK?7?A3M1
+Z22 DEx4 work 5 c_ula 0 22 Z4Nj5;`EP4=ZmVYXZ<Kz22
 R14
-Z24 DEx4 work 3 ula 0 22 ?`h[UWOC0TNoQIZ2NV?PB3
-R16
+Z23 DEx4 work 3 ula 0 22 ?`h[UWOC0TNoQIZ2NV?PB3
+R15
 R2
 R3
 R4
@@ -76,29 +76,29 @@ L21
 V^k<z3RESh<88WEc;Clh=@0
 R8
 31
+R18
 R19
 R20
-R21
 R12
 R13
 !s100 UGFo@hEQRZB[]H`oT>=fG1
 !i10b 1
 Ec_ula
-Z25 w1486492108
+R1
 R2
 R3
 R4
 R5
-Z26 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/c_ula.vhd
-Z27 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/c_ula.vhd
+Z24 8C:/Users/Cristiane/Desktop/mips_uniciclo/c_ula.vhd
+Z25 FC:/Users/Cristiane/Desktop/mips_uniciclo/c_ula.vhd
 l0
 L5
 VZ4Nj5;`EP4=ZmVYXZ<Kz22
 R8
 31
-Z28 !s108 1486496615.490000
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/c_ula.vhd|
-Z30 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/c_ula.vhd|
+Z26 !s108 1486570043.932000
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/c_ula.vhd|
+Z28 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/c_ula.vhd|
 R12
 R13
 !s100 8^4JJSS<Y`>AC5W;i`KSZ3
@@ -107,42 +107,42 @@ Artl
 R2
 R3
 R4
-R23
+R22
 l16
 L14
 Vi6agXmCQdnUbzebYSdH4?0
 R8
 31
+R26
+R27
 R28
-R29
-R30
 R12
 R13
 !s100 lN;dIBFoR`^B:NHgC=O5d2
 !i10b 1
 Econtrol
-Z31 w1486493763
-R16
+R1
+R15
 R2
 R3
 R4
 R5
-Z32 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/control.vhd
-Z33 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/control.vhd
+Z29 8C:/Users/Cristiane/Desktop/mips_uniciclo/control.vhd
+Z30 FC:/Users/Cristiane/Desktop/mips_uniciclo/control.vhd
 l0
 L6
 VN8;9BCBEd>1R9OKUHQ;ij0
 R8
 31
-Z34 !s108 1486496618.447000
-Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/control.vhd|
-Z36 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/control.vhd|
+Z31 !s108 1486570050.510000
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/control.vhd|
+Z33 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/control.vhd|
 R12
 R13
 !s100 <0Icd<QE@Ge7d[`VDG]970
 !i10b 1
 Artl
-R16
+R15
 R2
 R3
 R4
@@ -152,9 +152,9 @@ L22
 Vb^d<7S2[i2?lIm?ddilam0
 R8
 31
-R34
-R35
-R36
+R31
+R32
+R33
 R12
 R13
 !s100 [bNmc^W@zV@UO]UbVQCcE2
@@ -164,16 +164,16 @@ R1
 R3
 R4
 R5
-Z37 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/data_memory.vhd
-Z38 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/data_memory.vhd
+Z34 8C:/Users/Cristiane/Desktop/mips_uniciclo/data_memory.vhd
+Z35 FC:/Users/Cristiane/Desktop/mips_uniciclo/data_memory.vhd
 l0
 L42
 V`@dc3Aa>a55[KT;2Ocz:b1
 R8
 31
-Z39 !s108 1486496615.994000
-Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/data_memory.vhd|
-Z41 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/data_memory.vhd|
+Z36 !s108 1486570045.368000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/data_memory.vhd|
+Z38 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/data_memory.vhd|
 R12
 R13
 !s100 EjFldFl`:MombbgQ]L`[d2
@@ -187,28 +187,28 @@ L54
 Vf=cO[19ZDnKfP^W2612@T1
 R8
 31
-R39
-R40
-R41
+R36
+R37
+R38
 R12
 R13
 !s100 [D=oLGHY;ZOOWfing@GKi2
 !i10b 1
 Ememory_instruction
-Z42 w1486491525
+Z39 w1486569686
 R3
 R4
 R5
-Z43 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/memory_instruction.vhd
-Z44 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/memory_instruction.vhd
+Z40 8C:/Users/Cristiane/Desktop/mips_uniciclo/memory_instruction.vhd
+Z41 FC:/Users/Cristiane/Desktop/mips_uniciclo/memory_instruction.vhd
 l0
 L42
 VR^Lg[koj_7?aR4Idg^mlN1
 R8
 31
-Z45 !s108 1486496615.740000
-Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/memory_instruction.vhd|
-Z47 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/memory_instruction.vhd|
+Z42 !s108 1486570044.781000
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/memory_instruction.vhd|
+Z44 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/memory_instruction.vhd|
 R12
 R13
 !s100 @]n=3VK3n8WzM<o?U0=YU3
@@ -222,9 +222,9 @@ L52
 VML4QQQQPTWnEf<AkBG;4X3
 R8
 31
-R45
-R46
-R47
+R42
+R43
+R44
 R12
 R13
 !s100 cP7GV4lVPiMhnJPT<b9U<2
@@ -233,10 +233,10 @@ Pmips_pkg
 R2
 R3
 R4
-w1486496259
+R39
 R5
-8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/mips_pkg.vhd
-FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/mips_pkg.vhd
+8C:/Users/Cristiane/Desktop/mips_uniciclo/mips_pkg.vhd
+FC:/Users/Cristiane/Desktop/mips_uniciclo/mips_pkg.vhd
 l0
 L5
 V<J0MZ9c4iAz0A:HinJX_Q0
@@ -246,71 +246,71 @@ R12
 R13
 !s100 HhUAMBUBMP``=AfQlzMBL0
 !i10b 1
-!s108 1486496615.131000
-!s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/mips_pkg.vhd|
-!s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/mips_pkg.vhd|
+!s108 1486570038.043000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/mips_pkg.vhd|
+!s107 C:/Users/Cristiane/Desktop/mips_uniciclo/mips_pkg.vhd|
 Emultiplexador_32_bits
-R42
-R16
+R39
+R15
 R2
 R3
 R4
 R5
-Z48 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/multiplexador_32_bits.vhd
-Z49 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/multiplexador_32_bits.vhd
+Z45 8C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_32_bits.vhd
+Z46 FC:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_32_bits.vhd
 l0
 L6
 V43]_ATC>UhBHiKK?7?A3M1
 R8
 31
-Z50 !s108 1486496618.086000
-Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/multiplexador_32_bits.vhd|
-Z52 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/multiplexador_32_bits.vhd|
+Z47 !s108 1486570049.681000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_32_bits.vhd|
+Z49 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_32_bits.vhd|
 R12
 R13
 !s100 P8LzdKRUn<RIIi[^=ZY]S3
 !i10b 1
 Artl
-R16
+R15
 R2
 R3
 R4
-R22
+R21
 l15
 L14
 VjL94C>R1HCOme6l>gJGAm0
 R8
 31
-R50
-R51
-R52
+R47
+R48
+R49
 R12
 R13
 !s100 oQF=onCS^mJbb<2F?nKP^0
 !i10b 1
 Emultiplexador_5_bits
-R42
-R16
+R39
+R15
 R2
 R3
 R4
 R5
-Z53 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/multiplexador_5_bits.vhd
-Z54 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/multiplexador_5_bits.vhd
+Z50 8C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_5_bits.vhd
+Z51 FC:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_5_bits.vhd
 l0
 L6
 Vki8B^P^NkE=0BWOV65]VZ2
 R8
 31
-Z55 !s108 1486496617.833000
-Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/multiplexador_5_bits.vhd|
-Z57 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/multiplexador_5_bits.vhd|
+Z52 !s108 1486570048.902000
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_5_bits.vhd|
+Z54 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/multiplexador_5_bits.vhd|
 R12
 R13
 !s100 z^Z>@:ORC]=i[60_Y9^gg1
 !i10b 1
 Artl
-R16
+R15
 R2
 R3
 R4
@@ -320,36 +320,36 @@ L14
 V5`:AQ2@8;Bg0Jn:UdFPlZ3
 R8
 31
-R55
-R56
-R57
+R52
+R53
+R54
 R12
 R13
 !s100 ebMJoE55=@ikO]U;7^del0
 !i10b 1
 Epc
-Z58 w1486496348
-R16
+R39
+R15
 R2
 R3
 R4
 R5
-Z59 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/pc.vhd
-Z60 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/pc.vhd
+Z55 8C:/Users/Cristiane/Desktop/mips_uniciclo/pc.vhd
+Z56 FC:/Users/Cristiane/Desktop/mips_uniciclo/pc.vhd
 l0
 L6
 V;hBgEZGhN1KQmI4FF]1C41
 R8
 31
-Z61 !s108 1486496617.590000
-Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/pc.vhd|
-Z63 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/pc.vhd|
+Z57 !s108 1486570048.209000
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/pc.vhd|
+Z59 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/pc.vhd|
 R12
 R13
 !s100 jlBbA172Th6V4gg8eGRXW2
 !i10b 1
 Artl
-R16
+R15
 R2
 R3
 R4
@@ -359,36 +359,36 @@ L16
 V^NJmP0_DeXdRYoCMA;z?73
 R8
 31
-R61
-R62
-R63
+R57
+R58
+R59
 R12
 R13
 !s100 5m_g_E>=Z`Ba=jaiH@Db_1
 !i10b 1
 Esomador
-Z64 w1486494926
-R16
+Z60 w1486569687
+R15
 R2
 R3
 R4
 R5
-Z65 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/somador.vhd
-Z66 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/somador.vhd
+Z61 8C:/Users/Cristiane/Desktop/mips_uniciclo/somador.vhd
+Z62 FC:/Users/Cristiane/Desktop/mips_uniciclo/somador.vhd
 l0
 L6
 V_>MS]Nj]6c8=ZC=3W2_=m0
 R8
 31
-Z67 !s108 1486496617.062000
-Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/somador.vhd|
-Z69 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/somador.vhd|
+Z63 !s108 1486570046.712000
+Z64 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/somador.vhd|
+Z65 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/somador.vhd|
 R12
 R13
 !s100 8fmjj97gnWlS@JmRkzb803
 !i10b 1
 Artl
-R16
+R15
 R2
 R3
 R4
@@ -398,75 +398,75 @@ L15
 Vcdzi[^7ZDY9=Ejh6N`nSf1
 R8
 31
-R67
-R68
-R69
+R63
+R64
+R65
 R12
 R13
 !s100 dcmRUOBH`0MP3C2D2dMD62
 !i10b 1
 Eula
-Z70 w1486491620
-R16
+R60
+R15
 R2
 R3
 R4
 R5
-Z71 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/ula.vhd
-Z72 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/ula.vhd
+Z66 8C:/Users/Cristiane/Desktop/mips_uniciclo/ula.vhd
+Z67 FC:/Users/Cristiane/Desktop/mips_uniciclo/ula.vhd
 l0
 L6
 V?`h[UWOC0TNoQIZ2NV?PB3
 R8
 31
-Z73 !s108 1486496617.326000
-Z74 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/ula.vhd|
-Z75 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/ula.vhd|
+Z68 !s108 1486570047.598000
+Z69 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/ula.vhd|
+Z70 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/ula.vhd|
 R12
 R13
 !s100 EHk1XQJoFePkaj;`7]nKl2
 !i10b 1
 Abehavioral
-R16
+R15
 R2
 R3
 R4
-R24
+R23
 l21
 L17
 V7PY?ZYcXZUTMnTRRQd9Gl1
 R8
 31
-R73
-R74
-R75
+R68
+R69
+R70
 R12
 R13
 !s100 63DI16IAHQcbVEAOR6kkW3
 !i10b 1
 Euniciclo
-Z76 w1486496300
-R16
+R60
+R15
 R2
 R3
 R4
 R5
-Z77 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/uniciclo.vhd
-Z78 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/uniciclo.vhd
+Z71 8C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd
+Z72 FC:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd
 l0
 L6
 V2TGeg4]6cXlNNPC4G2B342
 R8
 31
-Z79 !s108 1486496616.453000
-Z80 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/uniciclo.vhd|
-Z81 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/uniciclo.vhd|
+Z73 !s108 1486570046.145000
+Z74 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd|
+Z75 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo.vhd|
 R12
 R13
 !s100 <Rg;lg]kP?4_JXoo^8TKL0
 !i10b 1
 Artl
-R16
+R15
 R2
 R3
 R4
@@ -476,20 +476,20 @@ L36
 VT7g@;dhd_Yfdh=QHg`gbb3
 R8
 31
-R79
-R80
-R81
+R73
+R74
+R75
 R12
 R13
 !s100 V2PQSmMaTRdg><Fl9Ji_?0
 !i10b 1
 Euniciclo_tb
-Z82 w1486496504
+R60
 R3
 R4
 R5
-Z83 8C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/uniciclo_tb.vhd
-Z84 FC:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/uniciclo_tb.vhd
+Z76 8C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo_tb.vhd
+Z77 FC:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo_tb.vhd
 l0
 L4
 VPei0aoW?CaM8cX0]idAEg1
@@ -497,9 +497,9 @@ VPei0aoW?CaM8cX0]idAEg1
 R8
 31
 !i10b 1
-Z85 !s108 1486496619.283000
-Z86 !s90 -reportprogress|300|-93|-work|work|C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/uniciclo_tb.vhd|
-Z87 !s107 C:/Users/TEMP.W312590.001/Desktop/mips_uniciclo/uniciclo_tb.vhd|
+Z78 !s108 1486570051.800000
+Z79 !s90 -reportprogress|300|-93|-work|work|C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo_tb.vhd|
+Z80 !s107 C:/Users/Cristiane/Desktop/mips_uniciclo/uniciclo_tb.vhd|
 R12
 R13
 Auniciclo_arch
@@ -513,8 +513,8 @@ V<m9NHo`2B:@kQ[Sgo`jze3
 R8
 31
 !i10b 1
-R85
-R86
-R87
+R78
+R79
+R80
 R12
 R13
