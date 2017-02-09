@@ -3,32 +3,32 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clk'
-Slack : -18.276
-TNS   : -16968.570
+Slack : -18.375
+TNS   : -17060.945
 
 Type  : Slow Model Setup 'clk_mem'
-Slack : -14.335
-TNS   : -599.290
+Slack : -14.474
+TNS   : -585.651
 
 Type  : Slow Model Setup 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -6.677
-TNS   : -6.677
+Slack : -5.129
+TNS   : -5.129
 
 Type  : Slow Model Hold 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -3.778
-TNS   : -3.778
+Slack : -4.157
+TNS   : -4.157
 
 Type  : Slow Model Hold 'clk_mem'
-Slack : 1.424
+Slack : 0.637
 TNS   : 0.000
 
 Type  : Slow Model Hold 'clk'
-Slack : 1.835
+Slack : 1.541
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -2.841
-TNS   : -38.418
+Slack : -2.573
+TNS   : -52.358
 
 Type  : Slow Model Minimum Pulse Width 'clk_mem'
 Slack : -2.000
@@ -39,27 +39,27 @@ Slack : -1.380
 TNS   : -1033.380
 
 Type  : Fast Model Setup 'clk'
-Slack : -8.346
-TNS   : -7651.198
+Slack : -8.311
+TNS   : -7685.040
 
 Type  : Fast Model Setup 'clk_mem'
-Slack : -6.391
-TNS   : -283.967
+Slack : -6.436
+TNS   : -281.115
 
 Type  : Fast Model Setup 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -3.021
-TNS   : -3.021
+Slack : -2.305
+TNS   : -2.305
 
 Type  : Fast Model Hold 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -1.712
-TNS   : -1.712
+Slack : -1.827
+TNS   : -1.827
 
 Type  : Fast Model Hold 'clk_mem'
-Slack : 0.635
+Slack : 0.285
 TNS   : 0.000
 
 Type  : Fast Model Hold 'clk'
-Slack : 0.988
+Slack : 0.776
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'clk_mem'
@@ -71,7 +71,7 @@ Slack : -1.380
 TNS   : -1033.380
 
 Type  : Fast Model Minimum Pulse Width 'memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated|ram_block1a0~porta_address_reg0'
-Slack : -0.952
-TNS   : -9.944
+Slack : -0.771
+TNS   : -10.512
 
 ------------------------------------------------------------

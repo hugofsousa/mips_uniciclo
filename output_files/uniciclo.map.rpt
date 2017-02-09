@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uniciclo
-Wed Feb 08 23:05:02 2017
+Wed Feb 08 23:21:25 2017
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -62,13 +62,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Feb 08 23:05:02 2017      ;
+; Analysis & Synthesis Status        ; Successful - Wed Feb 08 23:21:25 2017      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; uniciclo                                   ;
 ; Top-level Entity Name              ; uniciclo                                   ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; 3,313                                      ;
-;     Total combinational functions  ; 2,321                                      ;
+; Total logic elements               ; 3,358                                      ;
+;     Total combinational functions  ; 2,366                                      ;
 ;     Dedicated logic registers      ; 1,032                                      ;
 ; Total registers                    ; 1032                                       ;
 ; Total pins                         ; 59                                         ;
@@ -214,16 +214,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 3,313 ;
+; Estimated Total logic elements              ; 3,358 ;
 ;                                             ;       ;
-; Total combinational functions               ; 2321  ;
+; Total combinational functions               ; 2366  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 1987  ;
-;     -- 3 input functions                    ; 271   ;
-;     -- <=2 input functions                  ; 63    ;
+;     -- 4 input functions                    ; 2020  ;
+;     -- 3 input functions                    ; 264   ;
+;     -- <=2 input functions                  ; 82    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 2245  ;
+;     -- normal mode                          ; 2290  ;
 ;     -- arithmetic mode                      ; 76    ;
 ;                                             ;       ;
 ; Total registers                             ; 1032  ;
@@ -235,7 +235,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 1032  ;
-; Total fan-out                               ; 12694 ;
+; Total fan-out                               ; 12843 ;
 ; Average fan-out                             ; 3.65  ;
 +---------------------------------------------+-------+
 
@@ -245,12 +245,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+--------------+
-; |uniciclo                                 ; 2321 (58)         ; 1032 (0)     ; 16384       ; 0            ; 0       ; 0         ; 59   ; 0            ; |uniciclo                                                                                      ;              ;
-;    |breg_ula:bregula|                     ; 2190 (0)          ; 1024 (0)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|breg_ula:bregula                                                                     ;              ;
+; |uniciclo                                 ; 2366 (58)         ; 1032 (0)     ; 16384       ; 0            ; 0       ; 0         ; 59   ; 0            ; |uniciclo                                                                                      ;              ;
+;    |breg_ula:bregula|                     ; 2236 (0)          ; 1024 (0)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|breg_ula:bregula                                                                     ;              ;
 ;       |breg:breg|                         ; 1413 (1413)       ; 1024 (1024)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|breg_ula:bregula|breg:breg                                                           ;              ;
-;       |c_ula:c_ula|                       ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|breg_ula:bregula|c_ula:c_ula                                                         ;              ;
+;       |c_ula:c_ula|                       ; 31 (31)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|breg_ula:bregula|c_ula:c_ula                                                         ;              ;
 ;       |multiplexador_32_bits:mux|         ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|breg_ula:bregula|multiplexador_32_bits:mux                                           ;              ;
-;       |ula:ula|                           ; 711 (711)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|breg_ula:bregula|ula:ula                                                             ;              ;
+;       |ula:ula|                           ; 759 (759)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|breg_ula:bregula|ula:ula                                                             ;              ;
 ;    |control:ctrl|                         ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|control:ctrl                                                                         ;              ;
 ;    |data_memory:md|                       ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|data_memory:md                                                                       ;              ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|data_memory:md|altsyncram:altsyncram_component                                       ;              ;
@@ -258,7 +258,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |memory_instruction:mi|                ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|memory_instruction:mi                                                                ;              ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|memory_instruction:mi|altsyncram:altsyncram_component                                ;              ;
 ;          |altsyncram_qd81:auto_generated| ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_qd81:auto_generated ;              ;
-;    |multiplexador_32_bits:mux2|           ; 35 (35)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|multiplexador_32_bits:mux2                                                           ;              ;
+;    |multiplexador_32_bits:mux2|           ; 34 (34)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|multiplexador_32_bits:mux2                                                           ;              ;
 ;    |multiplexador_5_bits:mux1|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|multiplexador_5_bits:mux1                                                            ;              ;
 ;    |pc:PC_P|                              ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|pc:PC_P                                                                              ;              ;
 ;    |somador:s1|                           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uniciclo|somador:s1                                                                           ;              ;
@@ -294,8 +294,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------+-----------------------------------+------------------------+
 ; breg_ula:bregula|c_ula:c_ula|c4[3]                 ; GND                               ; yes                    ;
 ; breg_ula:bregula|c_ula:c_ula|c4[2]                 ; breg_ula:bregula|c_ula:c_ula|Mux1 ; yes                    ;
-; breg_ula:bregula|c_ula:c_ula|c4[0]                 ; GND                               ; yes                    ;
 ; breg_ula:bregula|c_ula:c_ula|c4[1]                 ; GND                               ; yes                    ;
+; breg_ula:bregula|c_ula:c_ula|c4[0]                 ; GND                               ; yes                    ;
 ; Number of user-specified and inferred latches = 4  ;                                   ;                        ;
 +----------------------------------------------------+-----------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -338,22 +338,21 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |uniciclo|pc:PC_P|address_out[27]            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |uniciclo|pc:PC_P|address_out[28]            ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |uniciclo|pc:PC_P|address_out[25]            ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |uniciclo|breg_ula:bregula|c_ula:c_ula|c4[2] ;
-; 12:1               ; 8 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux20     ;
-; 13:1               ; 7 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux8      ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux26     ;
-; 14:1               ; 4 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux6      ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 16 LEs               ; 2 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux28     ;
-; 15:1               ; 2 bits    ; 20 LEs        ; 18 LEs               ; 2 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux2      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |uniciclo|pc:PC_P|address_out[27]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |uniciclo|pc:PC_P|address_out[31]        ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |uniciclo|pc:PC_P|address_out[21]        ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 56 LEs               ; 8 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux21 ;
+; 14:1               ; 7 bits    ; 63 LEs        ; 56 LEs               ; 7 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux8  ;
+; 14:1               ; 4 bits    ; 36 LEs        ; 32 LEs               ; 4 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux27 ;
+; 15:1               ; 4 bits    ; 40 LEs        ; 36 LEs               ; 4 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux4  ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux28 ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |uniciclo|breg_ula:bregula|ula:ula|Mux3  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------+
@@ -633,7 +632,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:18     ;
+; Top            ; 00:00:20     ;
 +----------------+--------------+
 
 
@@ -643,7 +642,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Wed Feb 08 23:04:36 2017
+    Info: Processing started: Wed Feb 08 23:20:57 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uniciclo -c uniciclo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file uniciclo.vhd
@@ -717,14 +716,14 @@ Info (12128): Elaborating entity "multiplexador_5_bits" for hierarchy "multiplex
 Info (12128): Elaborating entity "multiplexador_32_bits" for hierarchy "multiplexador_32_bits:mux2"
 Info (12128): Elaborating entity "breg_ula" for hierarchy "breg_ula:bregula"
 Info (12128): Elaborating entity "ula" for hierarchy "breg_ula:bregula|ula:ula"
-Warning (10492): VHDL Process Statement warning at ula.vhd(36): signal "shamt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at ula.vhd(37): signal "shamt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at ula.vhd(39): signal "shamt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ula.vhd(38): signal "shamt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ula.vhd(40): signal "shamt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "breg" for hierarchy "breg_ula:bregula|breg:breg"
 Info (12128): Elaborating entity "c_ula" for hierarchy "breg_ula:bregula|c_ula:c_ula"
 Warning (10492): VHDL Process Statement warning at c_ula.vhd(29): signal "shamt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at c_ula.vhd(47): signal "shamt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at c_ula.vhd(51): signal "shamt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at c_ula.vhd(49): signal "shamt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at c_ula.vhd(53): signal "shamt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10631): VHDL Process Statement warning at c_ula.vhd(19): inferring latch(es) for signal or variable "c4", which holds its previous value in one or more paths through the process
 Info (10041): Inferred latch for "c4[0]" at c_ula.vhd(19)
 Info (10041): Inferred latch for "c4[1]" at c_ula.vhd(19)
@@ -751,8 +750,6 @@ Info (12133): Instantiated megafunction "data_memory:md|altsyncram:altsyncram_co
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_lnc1.tdf
     Info (12023): Found entity 1: altsyncram_lnc1
 Info (12128): Elaborating entity "altsyncram_lnc1" for hierarchy "data_memory:md|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated"
-Warning (113028): 253 out of 256 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
-    Warning (113027): Addresses ranging from 3 to 255 are not initialized
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "breg_ula:bregula|breg:breg|breg" is uninferred due to asynchronous read logic
 Warning (13012): Latch breg_ula:bregula|c_ula:c_ula|c4[2] has unsafe behavior
@@ -760,15 +757,15 @@ Warning (13012): Latch breg_ula:bregula|c_ula:c_ula|c4[2] has unsafe behavior
 Info (17049): 22 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3468 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3513 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 3345 logic cells
+    Info (21061): Implemented 3390 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 564 megabytes
-    Info: Processing ended: Wed Feb 08 23:05:02 2017
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:26
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 572 megabytes
+    Info: Processing ended: Wed Feb 08 23:21:25 2017
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:27
 
 

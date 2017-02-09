@@ -42,6 +42,8 @@ begin
 		then c4 <= "0110";
 	elsif(func = "000011")			--sra
 		then c4 <= "1111";
+	elsif(func = "100110")			--xor
+		then c4 <= "0101";
 	end if;
 	
 	if(func = "000000" and shamt /= "00000") --slt

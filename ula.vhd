@@ -30,6 +30,7 @@ begin
 case	ulop	is
 when	ULA_AND	=>	a32	<=	A	and	B;
 when	ULA_OR		=>	a32	<=	A	or	B;
+when ULA_XOR => a32 <= A xor B;
 when	ULA_ADD	 =>	a32	 <=	 std_logic_vector(signed(A)	 +	 signed(B));
 when	ULA_SUB	=>	a32	<=	tmp;
 when	ULA_SLT	=>	a32	<=	(0	=>	tmp(31),	others	=>	'0');   --seria 1 => tmp(31)	
