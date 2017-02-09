@@ -28,7 +28,7 @@ begin
 	when "10" =>
 	if(func = "000000" and shamt = "00000")	--add
 		then c4 <= "0010";
-	elsif(func = "000100")			--and 
+	elsif(func = "100100")			--and 
 		then c4 <= "0000";
 	elsif(func = "001010")			--slt
 		then c4 <= "0111";
@@ -40,6 +40,8 @@ begin
 		then c4 <= "0111";
 	elsif(func = "100010")			--sub
 		then c4 <= "0110";
+	elsif(func = "000011")			--sra
+		then c4 <= "1111";
 	end if;
 	
 	if(func = "000000" and shamt /= "00000") --slt
